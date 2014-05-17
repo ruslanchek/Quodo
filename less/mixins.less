@@ -1,0 +1,19 @@
+.box-sizing(@param) {
+  -moz-box-sizing: @param;
+  -webkit-box-sizing: @param;
+  box-sizing: @param;
+}
+
+.border-radius(@param) {
+  -moz-border-radius: @param;
+  -webkit-border-radius: @param;
+  border-radius: @param;
+}
+
+.clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

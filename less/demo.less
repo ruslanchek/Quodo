@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Kenia);
+
+@grid-span-height: 40px;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.demo {
+  height: 100%;
+
+  @media only screen and (max-width : @viewport-min-width) {
+    margin-right: 0;
+    height: auto;
+  }
+
+  .hero {
+    background: #dddfe0;
+    padding: 25px 0 30px;
+
+    .description {
+      color: #81888D;
+    }
+
+    .logo {
+      font-family: 'Kenia', cursive;
+      font-size: 9em;
+      font-style: italic;
+      font-weight: 800;
+      margin-bottom: 0;
+      margin-top: 0;
+      margin-left: -8px;
+      line-height: 150px;
+      position: relative;
+
+      .text {
+        font-family: @base-font-family;
+        font-size: 11px;
+        position: absolute;
+        line-height: 1.4em;
+        top: 122px;
+        left: 67px;
+        text-transform: uppercase;
+        font-weight: 100;
+      }
+
+      i {
+        display: inline;
+        margin: 0;
+        color: #57616a;
+        position: relative;
+        z-index: 2;
+      }
+
+      .l-1 {
+        color: rgba(80, 89, 97, 1);
+      }
+
+      .l-2 {
+        color: rgba(80, 89, 97, 0.9);
+      }
+
+      .l-3 {
+        color: rgba(80, 89, 97, 0.81);
+      }
+
+      .l-4 {
+        color: rgba(80, 89, 97, 0.7);
+      }
+
+      .l-5 {
+        color: rgba(80, 89, 97, 0.65);
+      }
+    }
+  }
+
+  .grid-sample {
+    .span-1,
+    .span-2,
+    .span-3,
+    .span-4,
+    .span-5,
+    .span-6,
+    .span-7,
+    .span-8,
+    .span-9,
+    .span-10,
+    .span-11,
+    .span-12 {
+      background: #d5dadf;
+      color: #505961;
+      text-align: center;
+      line-height: @grid-span-height;
+      height: @grid-span-height;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .border-radius(@base-border-radius);
+      .box-sizing(border-box);
+    }
+  }
+}
