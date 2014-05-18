@@ -13,7 +13,7 @@
 	<body class="demo">
         <div class="hero">
             <div class="content">
-                <div class="wrapper width-static-960 width-fluid-90">
+                <div class="wrapper width-static-1000">
                     <h1 class="logo">
                         <i class="l-1">q</i><i class="l-2">u</i><i class="l-3">o</i><i class="l-4">d</i><i class="l-5">o</i>
                         <span class="text">А light CSS framework, that you even need!</span>
@@ -24,7 +24,7 @@
 
         <nav class="navigation-horizontal navigation-dark">
             <div class="content">
-                <div class="wrapper width-static-960 width-fluid-90">
+                <div class="wrapper width-static-1000">
                     <a href="#typography">Typography</a>
                     <a href="#grid-system">Grid system</a>
                     <a href="#forms">Forms</a>
@@ -38,7 +38,7 @@
         </nav>
 
         <div class="content">
-            <div class="wrapper width-static-960 width-fluid-90">
+            <div class="wrapper width-static-1000">
                 <h1>Navigation</h1>
 
                 <p>
@@ -51,8 +51,9 @@
 
                 <h3>Horizontal model</h3>
 
-                <h5>Default theme</h5>
-                <div class="navigation-horizontal rounded">
+
+                <h5>Bordered theme</h5>
+                <div class="navigation-horizontal navigation-bordered">
                     <a href="#typography">Typography</a>
                     <a href="#grid-system">Grid system</a>
                     <a href="#forms">Forms</a>
@@ -60,11 +61,23 @@
                     <a href="#navigation">Navigation</a>
                     <a href="#labels">Labels</a>
                     <a href="#colors">Colors</a>
-                    <a href="#utils">Utils</a>
+                    <a class="active" href="#utils">Utils</a>
+                </div>
+
+                <h5>Default theme</h5>
+                <div class="navigation-horizontal">
+                    <a href="#typography">Typography</a>
+                    <a href="#grid-system">Grid system</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#tables">Tables</a>
+                    <a href="#navigation">Navigation</a>
+                    <a href="#labels">Labels</a>
+                    <a href="#colors">Colors</a>
+                    <a class="active" href="#utils">Utils</a>
                 </div>
 
                 <h5>Light theme</h5>
-                <div class="navigation-horizontal navigation-light rounded">
+                <div class="navigation-horizontal navigation-light">
                     <a href="#typography">Typography</a>
                     <a href="#grid-system">Grid system</a>
                     <a href="#forms">Forms</a>
@@ -72,11 +85,11 @@
                     <a href="#navigation">Navigation</a>
                     <a href="#labels">Labels</a>
                     <a href="#colors">Colors</a>
-                    <a href="#utils">Utils</a>
+                    <a class="active" href="#utils">Utils</a>
                 </div>
 
                 <h5>Dark theme</h5>
-                <div class="navigation-horizontal navigation-dark rounded">
+                <div class="navigation-horizontal navigation-dark">
                     <a href="#typography">Typography</a>
                     <a href="#grid-system">Grid system</a>
                     <a href="#forms">Forms</a>
@@ -84,53 +97,73 @@
                     <a href="#navigation">Navigation</a>
                     <a href="#labels">Labels</a>
                     <a href="#colors">Colors</a>
-                    <a href="#utils">Utils</a>
+                    <a class="active" href="#utils">Utils</a>
                 </div>
 
                 <h3>Vertical model</h3>
 
+
                 <div class="grid-12">
-                    <div class="span-4">
+                    <div class="span-3">
+                        <h5>Bordered theme</h5>
+                        <nav class="navigation-vertical navigation-bordered">
+                            <a href="#typography">Typography</a>
+                            <a href="#grid-system">Grid system</a>
+                            <a href="#forms">Forms</a>
+                            <a href="#tables">Tables</a>
+                            <a href="#navigation">Navigation</a>
+                            <a class="active" href="#labels">Labels</a>
+                            <a href="#colors">Colors</a>
+                            <a href="#utils">Utils</a>
+                        </nav>
+                    </div>
+
+                    <div class="span-3">
                         <h5>Default theme</h5>
-                        <nav class="navigation-vertical rounded">
-                            <a class="rounded" href="#typography">Typography</a>
-                            <a class="rounded" href="#grid-system">Grid system</a>
-                            <a class="rounded" href="#forms">Forms</a>
-                            <a class="rounded" href="#tables">Tables</a>
-                            <a class="rounded" href="#navigation">Navigation</a>
-                            <a class="rounded" href="#labels">Labels</a>
-                            <a class="rounded" href="#colors">Colors</a>
-                            <a class="rounded" href="#utils">Utils</a>
+                        <nav class="navigation-vertical">
+                            <a href="#typography">Typography</a>
+                            <a href="#grid-system">Grid system</a>
+                            <a href="#forms">Forms</a>
+                            <a href="#tables">Tables</a>
+                            <a href="#navigation">Navigation</a>
+                            <a class="active" href="#labels">Labels</a>
+                            <a href="#colors">Colors</a>
+                            <a href="#utils">Utils</a>
                         </nav>
                     </div>
-                    <div class="span-4">
+
+                    <div class="span-3">
                         <h5>Light theme</h5>
-                        <nav class="navigation-vertical navigation-light rounded">
-                            <a class="rounded" href="#typography">Typography</a>
-                            <a class="rounded" href="#grid-system">Grid system</a>
-                            <a class="rounded" href="#forms">Forms</a>
-                            <a class="rounded" href="#tables">Tables</a>
-                            <a class="rounded" href="#navigation">Navigation</a>
-                            <a class="rounded" href="#labels">Labels</a>
-                            <a class="rounded" href="#colors">Colors</a>
-                            <a class="rounded" href="#utils">Utils</a>
+                        <nav class="navigation-vertical navigation-light">
+                            <a href="#typography">Typography</a>
+                            <a href="#grid-system">Grid system</a>
+                            <a href="#forms">Forms</a>
+                            <a href="#tables">Tables</a>
+                            <a href="#navigation">Navigation</a>
+                            <a class="active" href="#labels">Labels</a>
+                            <a href="#colors">Colors</a>
+                            <a href="#utils">Utils</a>
                         </nav>
                     </div>
-                    <div class="span-4">
+
+                    <div class="span-3">
                         <h5>Dark theme</h5>
-                        <nav class="navigation-vertical navigation-dark rounded">
-                            <a class="rounded" href="#typography">Typography</a>
-                            <a class="rounded" href="#grid-system">Grid system</a>
-                            <a class="rounded" href="#forms">Forms</a>
-                            <a class="rounded" href="#tables">Tables</a>
-                            <a class="rounded" href="#navigation">Navigation</a>
-                            <a class="rounded" href="#labels">Labels</a>
-                            <a class="rounded" href="#colors">Colors</a>
-                            <a class="rounded" href="#utils">Utils</a>
+                        <nav class="navigation-vertical navigation-dark">
+                            <a href="#typography">Typography</a>
+                            <a href="#grid-system">Grid system</a>
+                            <a href="#forms">Forms</a>
+                            <a href="#tables">Tables</a>
+                            <a href="#navigation">Navigation</a>
+                            <a href="#labels">Labels</a>
+                            <a href="#colors">Colors</a>
+                            <a href="#utils">Utils</a>
                         </nav>
                     </div>
                 </div>
-                
+
+                <hr/>
+
+                <h1>Typography</h1>
 
                 <h2>
                     You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
@@ -146,52 +179,10 @@
                     a candle to man.
                 </p>
 
-                <h3>
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
-                    killed
-                </h3>
-
-                <p>
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
-                    killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
-                    out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
-                    the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
-                    say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
-                    a candle to man.
-                </p>
-
-                <h4>
-                    You think water moves fast? You should see ice. It moves like it has a mind.
-                    Like it knows it  killed
-                </h4>
-
-                <p>
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
-                    killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
-                    out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
-                    the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
-                    say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
-                    a candle to man.
-                </p>
-
-                <h5>
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
-                    killed
-                </h5>
-
-                <p>
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
-                    killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
-                    out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
-                    the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
-                    say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
-                    a candle to man.
-                </p>
-
                 <hr/>
 
                 <a name="grid-system"></a>
-                <h2>Grid system</h2>
+                <h1>Grid system</h1>
 
                 <div class="container grid-sample">
                     <div class="grid-12">

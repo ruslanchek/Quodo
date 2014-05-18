@@ -1,11 +1,12 @@
 .navigation-horizontal,
 .navigation-vertical {
-  border-bottom: 1px solid @light-panel-color;
   margin-bottom: 2.5em;
+  border-bottom: 1px solid @elements-border-color;
+  .box-sizing(border-box);
 
   a {
     display: inline-block;
-    padding: 1em 20px;
+    padding: 1em 2.5ex;
     color: @base-text-color;
     text-decoration: none;
 
@@ -26,39 +27,27 @@
   }
 }
 
+.navigation-horizontal {
+  a {
+    .border-radius(@base-border-radius @base-border-radius 0 0);
+  }
+
+  a:first-of-type {
+
+  }
+
+  a:last-of-type {
+    border-bottom: none;
+  }
+}
+
 .navigation-vertical {
   border-bottom: none;
+  .border-radius(@base-border-radius);
 
   a {
     display: block !important;
-  }
-}
-
-.navigation-light {
-  background: @light-panel-color;
-  border-color: transparent;
-}
-
-.navigation-dark {
-  background: @dark-panel-color;
-  border-bottom: none;
-
-  a {
-    color: #fff;
-  }
-
-  a:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-}
-
-.navigation-vertical {
-  border: 1px solid @light-panel-color;
-  .box-sizing(border-box);
-
-  a {
-    .border-radius(0px);
-    border-bottom: 1px solid @light-panel-color;
+    border-bottom: 1px solid @elements-border-color;
   }
 
   a:first-of-type {
@@ -66,8 +55,52 @@
   }
 
   a:last-of-type {
-    .border-radius(0 0 @base-border-radius @base-border-radius);
     border-bottom: none;
+    .border-radius(0 0 @base-border-radius @base-border-radius);
+  }
+}
+
+.navigation-bordered {
+  border: 1px solid @elements-border-color;
+  .border-radius(@base-border-radius);
+
+  a {
+    .border-radius(0);
+  }
+}
+
+.navigation-vertical.navigation-bordered {
+  a {
+    border-bottom: 1px solid @elements-border-color;
+  }
+
+  a:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.navigation-light {
+  background: @light-panel-color;
+  border-bottom: none;
+  .border-radius(@base-border-radius);
+
+  a {
+    .border-radius(0);
+  }
+}
+
+.navigation-dark {
+  background: @dark-panel-color;
+  border-bottom: none;
+  .border-radius(@base-border-radius);
+
+  a {
+    color: #fff;
+    .border-radius(0);
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 }
 
