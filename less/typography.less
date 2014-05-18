@@ -56,9 +56,9 @@ code, kbd, pre, samp {
 
 code {
   display: inline;
-  background: @light-panel-color;
+  background: @panel-color-light;
   padding: 0em 0.3ex;
-  color: @dark-panel-color;
+  color: @panel-color-dark;
   .border-radius(@base-border-radius);
 }
 
@@ -73,4 +73,24 @@ ul, ol {
   li {
     margin-left: 2ex;
   }
+}
+
+.topic {
+  padding: 1em 2ex;
+  border: 1px solid transparent;
+  margin-bottom: 3.5ex;
+  .border-radius(@base-border-radius);
+}
+
+.topic-bordered {
+  border-color: @elements-border-color;
+}
+
+.topic-light {
+  background: @panel-color-light;
+}
+
+.topic-dark {
+  background: @panel-color-dark;
+  color: #fff;
 }

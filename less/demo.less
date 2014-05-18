@@ -16,10 +16,16 @@ body {
   @media only screen and (max-width : @viewport-min-width) {
     margin-right: 0;
     height: auto;
+
+    .navigation-demo-top {
+      .content {
+        margin: 0;
+      }
+    }
   }
 
   .navigation-demo-top {
-    width: @viewport-min-width;
+    min-width: @viewport-min-width;
 
     .border-radius(0);
   }
@@ -27,7 +33,7 @@ body {
   .hero {
     background: #dddfe0;
     padding: 25px 0 30px;
-    width: @viewport-min-width;
+    min-width: @viewport-min-width;
 
     .description {
       color: #81888D;
