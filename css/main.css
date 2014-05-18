@@ -364,7 +364,7 @@ audio {
   float: left;
   margin-left: 2%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 540px) {
   .grid-12 .span-1,
   .grid-12 .span-2,
   .grid-12 .span-3,
@@ -467,7 +467,7 @@ td {
 }
 .content {
   margin: 0 20px;
-  min-width: 660px;
+  min-width: 500px;
 }
 .navigation-horizontal,
 .navigation-vertical {
@@ -496,7 +496,7 @@ td {
 .navigation-vertical a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 540px) {
   .navigation-horizontal,
   .navigation-vertical {
     position: static;
@@ -614,13 +614,14 @@ body {
 .demo {
   height: 100%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 540px) {
   .demo {
     margin-right: 0;
     height: auto;
   }
 }
 .demo .navigation-demo-top {
+  width: 540px;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -628,6 +629,7 @@ body {
 .demo .hero {
   background: #dddfe0;
   padding: 25px 0 30px;
+  width: 540px;
 }
 .demo .hero .description {
   color: #81888D;
