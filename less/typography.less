@@ -49,3 +49,28 @@ p {
   font-size: 1.5em;
   font-weight: 100;
 }
+
+code, kbd, pre, samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+  display: inline;
+  background: @light-panel-color;
+  padding: 0em 0.3ex;
+  color: @dark-panel-color;
+  .border-radius(@base-border-radius);
+}
+
+hr {
+  margin: 2em 0;
+  border-width: @hr-border-width;
+}
+
+ul, ol {
+  margin-bottom: 1.7em;
+
+  li {
+    margin-left: 2ex;
+  }
+}
