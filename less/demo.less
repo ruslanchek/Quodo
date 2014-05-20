@@ -13,9 +13,17 @@ body {
 .demo {
   height: 100%;
 
+  .viewport {
+    margin-left: 20px;
+  }
+
   @media only screen and (max-width : @viewport-min-width) {
     margin-right: 0;
     height: auto;
+
+    .viewport {
+      margin-left: 0;
+    }
   }
 
   .hero {

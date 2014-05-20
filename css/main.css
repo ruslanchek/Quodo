@@ -512,6 +512,7 @@ pre,
 samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+pre,
 code {
   display: inline;
   background: #dddfe0;
@@ -520,6 +521,11 @@ code {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+}
+pre {
+  display: block;
+  margin-bottom: 1.6em;
+  padding: 0.75em 1.4ex;
 }
 hr {
   margin: 2em 0;
@@ -533,26 +539,8 @@ ul li,
 ol li {
   margin-left: 2ex;
 }
-pre {
-  margin-bottom: 1.6em;
-}
-.topic {
-  padding: 1em 2ex;
-  border: 1px solid transparent;
-  margin-bottom: 3.5ex;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-.topic-bordered {
-  border-color: #dddfe0;
-}
-.topic-light {
-  background: #dddfe0;
-}
-.topic-dark {
-  background: #616970;
-  color: #fff;
+.font-thin {
+  font-weight: 100;
 }
 body,
 th,
@@ -730,6 +718,24 @@ td {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
+.topic {
+  padding: 1em 2ex;
+  border: 1px solid transparent;
+  margin-bottom: 3.5ex;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.topic-bordered {
+  border-color: #dddfe0;
+}
+.topic-light {
+  background: #dddfe0;
+}
+.topic-dark {
+  background: #616970;
+  color: #fff;
+}
 html {
   height: 100%;
 }
@@ -739,10 +745,16 @@ body {
 .demo {
   height: 100%;
 }
+.demo .viewport {
+  margin-left: 20px;
+}
 @media only screen and (max-width: 540px) {
   .demo {
     margin-right: 0;
     height: auto;
+  }
+  .demo .viewport {
+    margin-left: 0;
   }
 }
 .demo .hero {

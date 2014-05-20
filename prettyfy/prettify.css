@@ -8,7 +8,7 @@
     }
 
     .kwd {
-        color: #008;
+        color: orange;
     }
 
     .com {
@@ -28,18 +28,19 @@
     }
 
     .tag {
-        color: #008;
+        color: #057684;
     }
 
     .atn {
-        color: #606;
+        color: #0da2b4;
     }
 
     .atv {
-        color: #080;
+        color: #0db496;
     }
 
-    .dec,.var {
+    .dec,
+    .var {
         color: #606;
     }
 
@@ -91,8 +92,7 @@
 }
 
 pre.prettyprint {
-    padding: 2px;
-    border: 1px solid #888;
+
 }
 
 ol.linenums {
