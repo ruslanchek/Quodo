@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Quodo LESS-Framework</title>
+
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	    <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="highlight/styles/atelier-lakeside.dark.css">
+
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	</head>
+	<body class="demo">
+        <div class="hero">
+            <div class="content">
+                <div class="wrapper width-fluid-100 width-static-1000">
+                    <h1 class="logo">
+                        <i class="l-1">q</i><i class="l-2">u</i><i class="l-3">o</i><i class="l-4">d</i><i class="l-5">o</i>
+                        <span class="text">А light CSS framework, that you even need!</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigation-horizontal navigation-dark navigation-demo-top">
+            <div class="content">
+                <div class="wrapper width-fluid-100 width-static-1000">
+                    <a href="typography.html">Typography</a>
+                    <a href="grid-system.html">Grid system</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#tables">Tables</a>
+                    <a href="#navigation">Navigation</a>
+                    <a href="#labels">Labels</a>
+                    <a href="#colors">Colors</a>
+                    <a href="#utils">Utils</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="wrapper width-fluid-100 width-static-1000">
+                <a name="navigation"></a>
+                <h1>Navigation</h1>
+
+                <p>
+                    There is a two ways in Quoto to draw a navigation blocks &mdash;
+                    a vertical navigation mode, and horizontal one, that regulated by <code>nav.navigation-horizontal</code>
+                    or <code>nav.navigation-vertical</code> classes. Both of the modes have four fancy themes, a default,
+                    a bordered, a light, and the dark. You can use those themes by append a theme class to elements.
+                </p>
+                <p>
+                    Here is their classes: <code>.navigation-light</code>,
+                    <code>.navigation-dark</code>, <code>.navigation-bordered</code>, and without any additional class, navigation element will use a default theme.
+                </p>
+
+                <h3>Horizontal navigation</h3>
+
+                <div class="navigation-horizontal navigation-bordered">
+                    <a href="#stayhere">Apples</a>
+                    <a href="#stayhere">Grapes</a>
+                    <a href="#stayhere">Oranges</a>
+                    <a href="#stayhere">Peas</a>
+                </div>
+
+                <h3>Vertical navigation</h3>
+
+                <div class="grid-12">
+                    <div class="span-4">
+                        <nav class="navigation-vertical navigation-light">
+                            <a href="#stayhere">Apples</a>
+                            <a href="#stayhere">Grapes</a>
+                            <a href="#stayhere">Oranges</a>
+                            <a href="#stayhere">Peas</a>
+                        </nav>
+                    </div>
+
+                    <div class="span-4">
+                        <nav class="navigation-vertical">
+                            <a href="#stayhere">Apples</a>
+                            <a href="#stayhere">Grapes</a>
+                            <a href="#stayhere">Oranges</a>
+                            <a href="#stayhere">Peas</a>
+                        </nav>
+                    </div>
+
+                    <div class="span-4">
+                        <nav class="navigation-vertical navigation-dark">
+                            <a href="#stayhere">Apples</a>
+                            <a href="#stayhere">Grapes</a>
+                            <a href="#stayhere">Oranges</a>
+                            <a href="#stayhere">Peas</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <h6>HTML code</h6>
+                <pre><code>&lt;nav class="navigation-vertical"&gt;
+    &lt;a href="#stayhere"&gt;Apples&lt;/a&gt;
+    &lt;a href="#stayhere"&gt;Grapes&lt;/a&gt;
+    &lt;a href="#stayhere"&gt;Oranges&lt;/a&gt;
+    &lt;a href="#stayhere"&gt;Peas&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                <hr/>
+
+
+                <a name="topics"></a>
+                <h1>Topics</h1>
+
+                <div class="grid-12">
+                    <div class="span-6">
+                        <aside class="topic topic-bordered">
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                            the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                            say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                            a candle to man.
+                        </aside>
+                    </div>
+                    <div class="span-6">
+                        <aside class="topic topic-dark">
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                            the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                            say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                            a candle to man.
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="grid-12">
+                    <div class="span-6">
+                        <aside class="topic topic-light">
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                            the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                            say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                            a candle to man.
+                        </aside>
+                    </div>
+                    <div class="span-6">
+                        <aside class="topic">
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                            the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                            say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                            a candle to man.
+                        </aside>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <a name="typography"></a>
+                <h1>Typography</h1>
+
+                <h2>You think water moves fast? You should see ice</h2>
+
+                <p>
+                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                    killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                    out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                    the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                    say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                    a candle to man.
+                </p>
+
+                <div class="grid-12">
+                    <div class="span-4">
+                        <h5></h5>
+                        <p>
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out.
+                        </p>
+                    </div>
+                    <div class="span-4">
+                        <p>
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out.
+                        </p>
+                    </div>
+                    <div class="span-4">
+                        <p>
+                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                            killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                            out.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>
+                    You think water moves fast? You should see ice.
+                </h3>
+
+                <div class="grid-12">
+                    <div class="span-6">
+                        <ul>
+                            <li>You think water moves fast? You should see ice.</li>
+                            <li>It moves like it has a mind. Like it knows it.</li>
+                            <li>killed the world once and got a taste for murder.</li>
+                            <li>After the avalanche, it took us a week to climb out.</li>
+                        </ul>
+                    </div>
+                    <div class="span-6">
+                        <ol>
+                            <li>You think water moves fast? You should see ice.</li>
+                            <li>It moves like it has a mind. Like it knows it.</li>
+                            <li>killed the world once and got a taste for murder.</li>
+                            <li>After the avalanche, it took us a week to climb out.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h4>You think water moves fast? You should see ice</h4>
+
+                <p>
+                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it
+                    killed the world once and got a taste for murder. After the avalanche, it took us a week to climb
+                    out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived
+                    the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd
+                    say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold
+                    a candle to man.
+                </p>
+
+                <hr/>
+
+                <a name="grid-system"></a>
+                <h1>Grid system</h1>
+
+                <div class="container grid-sample">
+                    <div class="grid-12">
+                        <div class="span-1">.span-1</div>
+                        <div class="span-11">.span-11</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-2">.span-2</div>
+                        <div class="span-10">.span-10</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-3">.span-3</div>
+                        <div class="span-9">.span-9</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-4">.span-4</div>
+                        <div class="span-8">.span-8</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-5">.span-5</div>
+                        <div class="span-7">.span-7</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-6">.span-6</div>
+                        <div class="span-6">.span-6</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-7">.span-7</div>
+                        <div class="span-5">.span-5</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-8">.span-8</div>
+                        <div class="span-4">.span-4</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-9">.span-9</div>
+                        <div class="span-3">.span-3</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-10">.span-10</div>
+                        <div class="span-2">.span-2</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-11">.span-11</div>
+                        <div class="span-1">.span-1</div>
+                    </div>
+
+                    <div class="grid-12">
+                        <div class="span-12">.span-12</div>
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+            </div>
+        </div>
+	</body>
+</html>
