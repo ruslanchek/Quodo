@@ -14,7 +14,7 @@
   }
 
   a:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.075);
   }
 
   @media only screen and (max-width : @viewport-min-width) {
@@ -67,6 +67,19 @@
   a {
     .border-radius(0);
   }
+
+  a.active {
+    background: @panel-color-light;
+  }
+
+  a:first-of-type {
+    .border-radius(@base-border-radius - 1 @base-border-radius - 1 0 0);
+  }
+
+  a:last-of-type {
+    border-bottom: none;
+    .border-radius(0 0 @base-border-radius - 1 @base-border-radius - 1);
+  }
 }
 
 .navigation-vertical.navigation-bordered {
@@ -87,6 +100,10 @@
   a {
     .border-radius(0);
   }
+
+  a.active {
+    background: @panel-color-dark;
+  }
 }
 
 .navigation-dark {
@@ -101,6 +118,10 @@
 
   a:hover {
     background: rgba(255, 255, 255, 0.1);
+  }
+
+  a.active {
+    background: @panel-color-light;
   }
 }
 

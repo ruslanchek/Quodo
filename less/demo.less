@@ -13,26 +13,23 @@ body {
 .demo {
   height: 100%;
 
+  .viewport {
+    margin-left: 20px;
+  }
+
   @media only screen and (max-width : @viewport-min-width) {
     margin-right: 0;
     height: auto;
 
-    .navigation-demo-top {
-      .content {
-        margin: 0;
-      }
+    .viewport {
+      margin-left: 0;
     }
-  }
-
-  .navigation-demo-top {
-    min-width: @viewport-min-width;
-
-    .border-radius(0);
   }
 
   .hero {
     background: #dddfe0;
     padding: 25px 0 30px;
+    margin-bottom: 2.5em;
     min-width: @viewport-min-width;
 
     .description {
