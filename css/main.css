@@ -314,37 +314,37 @@ audio {
   clear: both;
 }
 .grid-12 .span-1 {
-  width: 6.333333333333334%;
+  width: 6.33333333%;
 }
 .grid-12 .span-2 {
-  width: 14.666666666666668%;
+  width: 14.66666667%;
 }
 .grid-12 .span-3 {
   width: 23%;
 }
 .grid-12 .span-4 {
-  width: 31.333333333333336%;
+  width: 31.33333333%;
 }
 .grid-12 .span-5 {
-  width: 39.66666666666667%;
+  width: 39.66666667%;
 }
 .grid-12 .span-6 {
   width: 48%;
 }
 .grid-12 .span-7 {
-  width: 56.333333333333336%;
+  width: 56.33333333%;
 }
 .grid-12 .span-8 {
-  width: 64.66666666666667%;
+  width: 64.66666667%;
 }
 .grid-12 .span-9 {
   width: 73%;
 }
 .grid-12 .span-10 {
-  width: 81.33333333333334%;
+  width: 81.33333333%;
 }
 .grid-12 .span-11 {
-  width: 89.66666666666667%;
+  width: 89.66666667%;
 }
 .grid-12 .span-12 {
   width: 98%;
@@ -424,12 +424,6 @@ audio {
 .grid-10 .span-10 {
   width: 98%;
 }
-.grid-10 .span-11 {
-  width: 108%;
-}
-.grid-10 .span-12 {
-  width: 118%;
-}
 .grid-10 .span-1,
 .grid-10 .span-2,
 .grid-10 .span-3,
@@ -439,9 +433,7 @@ audio {
 .grid-10 .span-7,
 .grid-10 .span-8,
 .grid-10 .span-9,
-.grid-10 .span-10,
-.grid-10 .span-11,
-.grid-10 .span-12 {
+.grid-10 .span-10 {
   float: left;
   margin-left: 2%;
 }
@@ -455,9 +447,7 @@ audio {
   .grid-10 .span-7,
   .grid-10 .span-8,
   .grid-10 .span-9,
-  .grid-10 .span-10,
-  .grid-10 .span-11,
-  .grid-10 .span-12 {
+  .grid-10 .span-10 {
     float: none;
     width: auto;
   }
@@ -471,12 +461,12 @@ h3,
 h4,
 h5 {
   color: #81888d;
-  line-height: 1.1481481481481481em;
+  line-height: 1.14814815em;
 }
 h1 {
   font-size: 2.6em;
   margin-bottom: 0.3em;
-  line-height: 1.2000000000000002em;
+  line-height: 1.2em;
 }
 h2 {
   font-size: 2.1em;
@@ -495,8 +485,17 @@ h4 {
 }
 h5 {
   font-size: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.38em;
   line-height: 1.55em;
+}
+h6 {
+  font-size: 1em;
+  margin-bottom: 0.38em;
+  line-height: 1.55em;
+  color: #505961;
+}
+.subheading {
+  font-weight: 100;
 }
 p {
   margin-top: 0.5em;
@@ -516,7 +515,7 @@ pre,
 code {
   display: inline;
   background: #dddfe0;
-  padding: 0em 0.3ex;
+  padding: 0 0.3ex;
   color: #616970;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -525,7 +524,7 @@ code {
 pre {
   display: block;
   margin-bottom: 1.6em;
-  padding: 0.75em 1.4ex;
+  padding: 1em 1.4ex;
 }
 hr {
   margin: 2em 0;
@@ -538,9 +537,6 @@ ol {
 ul li,
 ol li {
   margin-left: 2ex;
-}
-.font-thin {
-  font-weight: 100;
 }
 body,
 th,
@@ -584,7 +580,7 @@ td {
 }
 .navigation-horizontal a:hover,
 .navigation-vertical a:hover {
-  background: rgba(0, 0, 0, 0.075);
+  background: rgba(0, 0, 0, 0.025);
 }
 @media only screen and (max-width: 540px) {
   .navigation-horizontal,
@@ -735,6 +731,9 @@ td {
 .topic-dark {
   background: #616970;
   color: #fff;
+}
+.font-thin {
+  font-weight: 100;
 }
 html {
   height: 100%;
