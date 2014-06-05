@@ -157,3 +157,16 @@
     clear: both;
   }
 }
+
+.font-face(@family: arial, @url, @weight: normal, @style: normal){
+  @font-face{
+    font-family: @family;
+    src:url('@{url}.eot');
+    src:url('@{url}.eot?#iefix') format('embedded-opentype'),
+    url('@{url}.woff') format('woff'),
+    url('@{url}.ttf') format('truetype'),
+    url('@{url}.svg#icon') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
