@@ -2,43 +2,16 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title><!--$section_title--> &mdash; Quodo LESS-Framework</title>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/quodo.css" />
-    <link rel="stylesheet" href="prettyfy/prettify.css">
-</head>
-
+<% include include/head.ejs %>
 
 <body class="demo">
-<div class="hero">
-    <div class="content">
-        <div class="wrapper width-fluid-100 width-static-1000">
-            <div class="logo">
-                <i class="l-1">q</i><i class="l-2">u</i><i class="l-3">o</i><i class="l-4">d</i><i class="l-5">o</i>
-                <span class="text">А light CSS framework, that you even need!</span>
-            </div>
-        </div>
-    </div>
-</div>
+<% include include/header.ejs %>
 
 <div class="content">123
     <div class="wrapper width-fluid-100 width-static-1000">
         <div class="grid-12">
             <div class="span-3">
-                <nav class="navigation-vertical navigation-bordered">
-    <a class="active" href="typography.html">Typography</a>
-    <a href="grid-system.html">Grid system</a>
-    <a href="forms.html">Forms</a>
-    <a href="tables.html">Tables</a>
-    <a href="navigatin.html">Navigation</a>
-    <a href="labels.html">Labels</a>
-    <a href="colors.html">Colors</a>
-    <a href="utils.html">Utils</a>
-</nav>
+                <% include include/nav-main.ejs %>
             </div>
 
             <div class="span-9">
@@ -158,13 +131,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="prettyfy/prettify.js"></script>
-<script type="text/javascript">
-    $(function(){
-        prettyPrint();
-    });
-</script>
+<% include include/scripts.ejs %>
 
 </body>
 </html>
