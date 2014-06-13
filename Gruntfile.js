@@ -19,11 +19,19 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            files: ['*.less', '*.ejs'],
-            tasks: ['less', 'ejs'],
             options: {
-                livereload: {
-                    port: 2000
+                livereload: true
+            },
+            files: ['*.less', '*.ejs'],
+            tasks: ['less', 'ejs']
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    hostname: '*',
+                    base: 'public',
+                    livereload: true
                 }
             }
         }
@@ -34,6 +42,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-ejs');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['less', 'ejs', 'watch']);
+    grunt.registerTask('default', ['connect', 'less', 'ejs', 'watch']);
 };
