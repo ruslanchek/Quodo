@@ -468,60 +468,66 @@ h5 {
 }
 h1 {
   font-size: 2.6em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.15em;
   line-height: 1.2em;
 }
 h1.subheading {
-  font-size: 1.8em;
+  font-size: 2.1em;
+  margin-bottom: 0.4em;
 }
 h2 {
   font-size: 2.1em;
-  margin-bottom: 0.38em;
+  margin-bottom: 0.15em;
   line-height: 1.25em;
 }
 h2.subheading {
-  font-size: 1.7em;
+  font-size: 1.75em;
+  margin-bottom: 0.4em;
 }
 h3 {
   font-size: 1.65em;
-  margin-bottom: 0.38em;
+  margin-bottom: 0.2em;
   line-height: 1.25em;
 }
 h3.subheading {
-  font-size: 1.45em;
+  font-size: 1.25em;
+  margin-bottom: 0.4em;
 }
 h4 {
   font-size: 1.25em;
-  margin-bottom: 0.38em;
+  margin-bottom: 0.2em;
   line-height: 1.35em;
 }
 h4.subheading {
-  font-size: 1.05em;
+  font-size: 1em;
+  margin-bottom: 0.4em;
 }
 h5 {
   font-size: 1em;
-  margin-bottom: 0.38em;
+  margin-bottom: 0.2em;
   line-height: 1.55em;
 }
 h5.subheading {
-  font-size: 1em;
+  font-size: 0.85em;
+  margin-bottom: 0.4em;
 }
 h6 {
   font-size: 1em;
-  margin-bottom: 0.38em;
+  margin-bottom: 0.2em;
   line-height: 1.55em;
   color: #505961;
 }
 h6.subheading {
-  font-size: 1em;
+  font-size: 0.7em;
 }
 p {
   margin-top: 0.5em;
   margin-bottom: 1.6em;
 }
 .lead {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 100;
+  line-height: 1.55em;
 }
 code,
 kbd,
@@ -529,11 +535,11 @@ pre,
 samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-pre,
 code {
-  display: inline;
+  display: block;
+  margin-bottom: 1.6em;
+  padding: 0.75em 2ex;
   background: #dddfe0;
-  padding: 0 0.3ex;
   color: #616970;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -542,13 +548,8 @@ code {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-pre {
-  display: block;
-  margin-bottom: 1.6em;
-  padding: 1em 1.4ex;
-}
 hr {
-  margin: 2em 0;
+  margin: 1em 0 2em;
   border-width: 2px;
 }
 ul,
@@ -561,7 +562,8 @@ ol li {
 }
 body,
 th,
-td {
+td,
+p {
   font-family: 'Scada', sans-serif;
   font-size: 16px;
   color: #505961;
