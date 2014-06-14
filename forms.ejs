@@ -1,0 +1,42 @@
+<% title = 'Forms' %>
+
+<% include include/content-pre.ejs %>
+
+<!-- VIEWPORT -->  
+<h2>Simple form</h2>
+<form method="post" action="" class="form">
+    <label>
+        Email
+        <input type="email" name="user-email" class="width-50" placeholder="Please, type your e-mail" />
+    </label>
+
+    <label>
+        Password
+        <input type="password" name="user-password" class="width-50" />
+    </label>
+
+    <p>
+        <button class="button button-go">Log in</button>
+        <button class="button">Cancel</button>
+    </p>
+</form>
+
+<code><pre class="prettyprint">
+&lt;form method="post" action="" class="form"&gt;
+    &lt;label&gt;
+        Email
+        &lt;input type="email" name="email" /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        Password
+        &lt;input type="password" name="password" /&gt;
+    &lt;/label&gt;
+    &lt;p&gt;
+        &lt;button class="button button-go"&gt;Log in&lt;/button&gt;
+        &lt;button class="button button-stop"&gt;Cancel&lt;/button&gt;
+        &lt;button class="button"&gt;Close&lt;/button&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</pre></code>
+<!-- /VIEWPORT -->   
+
+<% include include/content-post.ejs %>

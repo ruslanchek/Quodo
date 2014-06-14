@@ -3,7 +3,7 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ['public/css']
+                    paths: ['less']
                 },
                 files: {
                     'public/css/quodo.css': 'less/quodo.less'
@@ -18,12 +18,17 @@ module.exports = function(grunt) {
                 ext: '.html'
             }
         },
+        coffee: {
+            files: {
+                'public/js/*.js': 'coffee/*.coffee'
+            }
+        },
         watch: {
             options: {
                 livereload: true
             },
-            files: ['*.less', '*.ejs'],
-            tasks: ['less', 'ejs']
+            files: ['less/*.less', '*.ejs', 'coffee/*.coffee'],
+            tasks: ['less', 'ejs', 'coffee']
         },
         connect: {
             server: {
@@ -41,8 +46,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-ejs');
+    grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['connect', 'less', 'ejs', 'watch']);
+    grunt.registerTask('default', ['connect', 'less', 'ejs', 'coffee', 'watch']);
 };
