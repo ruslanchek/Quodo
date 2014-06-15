@@ -3,40 +3,72 @@
 <% include include/content-pre.ejs %>
 
 <!-- VIEWPORT -->  
-<h2>Simple form</h2>
-<form method="post" action="" class="form">
-    <label>
-        Email
-        <input type="email" name="user-email" class="width-50" placeholder="Please, type your e-mail" />
-    </label>
+<h2>Default form</h2>
+<div class="topic topic-bordered width-50">
+    <form method="post" action="" class="form">
+        <label>
+            Email
+            <input type="email" name="user-email" class="width-100" placeholder="Please, type your e-mail" />
+        </label>
 
-    <label>
-        Password
-        <input type="password" name="user-password" class="width-50" />
-    </label>
+        <label>
+            Password
+            <input type="password" name="user-password" class="width-100" />
+        </label>
 
-    <p>
         <button class="button button-go">Log in</button>
-        <button class="button">Cancel</button>
-    </p>
-</form>
+    </form>
+</div>
 
 <code><pre class="prettyprint">
-&lt;form method="post" action="" class="form"&gt;
-    &lt;label&gt;
-        Email
-        &lt;input type="email" name="email" /&gt;
-    &lt;/label&gt;
-    &lt;label&gt;
-        Password
-        &lt;input type="password" name="password" /&gt;
-    &lt;/label&gt;
-    &lt;p&gt;
-        &lt;button class="button button-go"&gt;Log in&lt;/button&gt;
-        &lt;button class="button button-stop"&gt;Cancel&lt;/button&gt;
-        &lt;button class="button"&gt;Close&lt;/button&gt;
-    &lt;/p&gt;
-&lt;/form&gt;</pre></code>
+&lt;div class="topic topic-bordered"&gt;
+    &lt;form method="post" action="" class="form"&gt;
+        &lt;label&gt;
+            Email
+            &lt;input type="email" name="email" class="width-100" placeholder="Please, type your e-mail" /&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            Password
+            &lt;input type="password" class="width-100" name="password" /&gt;
+        &lt;/label&gt;
+        &lt;p&gt;
+            &lt;button class="button button-go"&gt;Log in&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</pre></code>
+
+<br/>
+<br/>
+
+<h2>Simple form</h2>
+<div class="topic topic-bordered width-50">
+    <form method="post" action="" class="form">
+        <label>
+            <input type="email" name="user-email" placeholder="Email" class="width-100" />
+        </label>
+
+        <label>
+            <input type="password" name="user-password" placeholder="Password" class="width-100" />
+        </label>
+
+        <button class="button button-go width-100">Log in</button>
+    </form>
+</div>
+
+<code><pre class="prettyprint">
+&lt;div class="topic topic-bordered width-50"&gt;
+    &lt;form method="post" action="" class="form"&gt;
+        &lt;label&gt;
+            &lt;input type="email" name="user-email" placeholder="Email" class="width-100" /&gt;
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="password" name="user-password" placeholder="Password" class="width-100" /&gt;
+        &lt;/label&gt;
+
+        &lt;button class="button button-go width-100"&gt;Log in&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div></pre></code>
 <!-- /VIEWPORT -->   
 
 <% include include/content-post.ejs %>

@@ -1,110 +1,49 @@
 .form {
-	input[type="text"], 
-	input[type="password"], 
-	input[type="email"], 
-	input[type="url"], 
-	input[type="phone"], 
-	input[type="tel"], 
-	input[type="number"], 
-	input[type="datetime"], 
-	input[type="date"], 
-	input[type="search"], 
-	input[type="range"], 
-	input[type="file"], 
-	input[type="datetime-local"], 
-	textarea {
-		display: block;
-		outline: none;
-		border: 1px solid transparent;
-		background: @panel-color-light + 10;
-		border-radius: @base-border-radius;	
-		.animation-ease-in-quad(150ms);
-		padding: 0.35em 1ex;
-		font-size: 1em;
-		color: @base-text-color;
-	}
 
-	select {
-		display: block;
-		outline: none;
-		border: none;
-	}
-
-	input:hover,
-	textarea:hover {
-		background: @panel-color-light + 5;
-	}
-
-	input:focus,
-	textarea:focus {
-		border-color: @color-blue-light;
-	}
-
-	label {
-		display: block;
-		margin-bottom: 1.6em;
-	}
 }
 
-.button {
-	display: inline-block;
-	vertical-align: top;
-	font-family: @base-font-family;
-	font-size: @base-font-size;
-	font-weight: 400;
-	line-height: 1;
-	text-align: center;
-	text-decoration: none;
-	color: @base-text-color;
-	margin: 0;
-	border: 0;
-	border-radius: @base-border-radius;
-	box-shadow: none;
-	cursor: pointer;
-	background: @elements-bg-color-light;
-	padding: 0.5em 2ex 0.6em;
-	height: 2.3em;
-	outline: none;
-
-	.box-shadow (inset 0 -2px 0 rgba(0, 0, 0, 0.2));
-	.animation-ease-in-quad(150ms);
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+input[type="tel"],
+input[type="number"],
+input[type="datetime"],
+input[type="date"],
+input[type="search"],
+input[type="range"],
+input[type="file"],
+input[type="datetime-local"],
+textarea {
+  display: block;
+  outline: none;
+  border: 1px solid transparent;
+  background: @panel-color-light + 10;
+  border-radius: @base-border-radius;
+  .animation-ease-in-quad(150ms);
+  padding: 0.35em 1ex;
+  font-size: 1em;
+  color: @base-text-color;
 }
 
-.button:hover {
-	background: @elements-bg-color-light - 15;	
+select {
+  display: block;
+  outline: none;
+  border: none;
 }
 
-.button:active {
-	background: @elements-bg-color-light - 25;
-	.box-shadow (inset 0 2px 2px rgba(0, 0, 0, 0.2));
+input:hover,
+textarea:hover {
+  background: @panel-color-light + 5;
 }
 
-.button:focus {
-	
+input:focus,
+textarea:focus {
+  border-color: @color-blue-light;
 }
 
-.button-go {
-	background: @color-green;
-	color: #fff;
-}
-
-.button-go:hover {
-	background: @color-green + 15;	
-}
-
-.button-go:active {
-	background: @color-green - 15;	
-}
-
-.button-stop {
-	background: @color-red;
-	color: #fff;
-}
-
-.button-stop:hover {
-	background: @color-red + 15;	
-}
-
-.button-stop:active {
-	background: @color-red - 15;	
+label {
+  display: block;
+  margin-bottom: 1.6em;
 }
