@@ -670,7 +670,7 @@ p {
 }
 .navigation-horizontal a:hover,
 .navigation-vertical a:hover {
-  background: rgba(0, 0, 0, 0.025);
+  background: rgba(0, 0, 0, 0.032);
 }
 .navigation-horizontal a.active,
 .navigation-vertical a.active {
