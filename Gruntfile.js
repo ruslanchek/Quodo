@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            files: ['less/*.less', '*.ejs'],
+            files: ['less/*.less', '*.ejs', 'include/*.ejs'],
             tasks: ['less', 'ejs']
         },
         connect: {
@@ -44,5 +44,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['connect', 'less', 'ejs', 'watch']);
+    grunt.registerTask('default', ['less', 'ejs', 'watch']);
 };

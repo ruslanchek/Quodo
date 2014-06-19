@@ -99,10 +99,17 @@ code {
   display: block;
   margin-bottom: 1.6em;
   padding: 0.75em 2ex;
-  background: @panel-color-light;
+  background: @panel-color-light + 20;
   color: @panel-color-dark;
   .border-radius(@base-border-radius);
   overflow: auto;
+}
+
+samp {
+  background: @panel-color-light + 20;
+  color: @panel-color-dark;
+  .border-radius(@base-border-radius);
+  padding: 0.1em 0.5ex;
 }
 
 hr {
