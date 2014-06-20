@@ -3,17 +3,17 @@
 <% include include/content-pre.ejs %>
 
 <!-- VIEWPORT -->  
-<h2>Nav blocks</h2>
+<h2>Vertical and horizontal navigation blocks</h2>
 
 <p>
     The nav blocks can have a horizontal and vertical layout. Both of that types, can have
-    a fancy stack of three color themes: <samp>.navigation-bordered</samp>, <samp>.navigation-light</samp>
-    and, of course, <samp>.navigation-dark</samp>. Notice, how stretchy looks those items of <samp>.navigation-horizontal.stretch</samp>.
+    a fancy stack of three color themes: <samp>.nav-bordered</samp>, <samp>.nav-light</samp>
+    and, of course, <samp>.nav-dark</samp>. Notice, how stretchy looks those items of <samp>.nav-horizontal.stretch</samp>.
 </p>
 
 <div class="grid-12">
     <div class="span-8">
-        <nav class="navigation-horizontal navigation-bordered" style="margin-bottom: 29px">
+        <nav class="nav-horizontal nav-bordered" style="margin-bottom: 29px">
             <a href="#">Item 1</a>
             <a class="active" href="#">Item 2</a>
             <a href="#">Item 3</a>
@@ -21,7 +21,7 @@
             <a href="#">Item 5</a>
         </nav>
 
-        <nav class="navigation-horizontal navigation-light" style="margin-bottom: 29px">
+        <nav class="nav-horizontal nav-light" style="margin-bottom: 29px">
             <a href="#">Item 1</a>
             <a class="active" href="#">Item 2</a>
             <a href="#">Item 3</a>
@@ -29,7 +29,7 @@
             <a href="#">Item 5</a>
         </nav>
 
-        <nav class="navigation-horizontal navigation-dark stretch">
+        <nav class="nav-horizontal nav-dark stretch">
             <a href="#">Item 1</a>
             <a class="active" href="#">Item 2</a>
             <a href="#">Item 3</a>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="span-4">
-        <nav class="navigation-vertical navigation-bordered">
+        <nav class="nav-vertical nav-bordered">
             <a href="#">Item 1</a>
             <a class="active" href="#">Item 2</a>
             <a href="#">Item 3</a>
@@ -51,7 +51,7 @@
 <br/>
 
 <code><pre class="prettyprint">
-&lt;nav class="navigation-vertical navigation-bordered"&gt;
+&lt;nav class="nav-vertical nav-bordered"&gt;
     &lt;a href="#"&gt;Item 1&lt;/a&gt;
     &lt;a class="active" href="#"&gt;Item 2&lt;/a&gt;
     &lt;a href="#"&gt;Item 3&lt;/a&gt;
@@ -59,7 +59,7 @@
     &lt;a href="#"&gt;Item 5&lt;/a&gt;
 &lt;/nav&gt;
 
-&lt;nav class="navigation-horizontal navigation-dark"&gt;
+&lt;nav class="nav-horizontal nav-dark"&gt;
     &lt;a href="#"&gt;Item 1&lt;/a&gt;
     &lt;a class="active" href="#"&gt;Item 2&lt;/a&gt;
     &lt;a href="#"&gt;Item 3&lt;/a&gt;
@@ -67,7 +67,7 @@
     &lt;a href="#"&gt;Item 5&lt;/a&gt;
 &lt;/nav&gt;
 
-&lt;nav class="navigation-vertical navigation-light stretch"&gt;
+&lt;nav class="nav-vertical nav-light stretch"&gt;
     &lt;a href="#"&gt;Item 1&lt;/a&gt;
     &lt;a class="active" href="#"&gt;Item 2&lt;/a&gt;
     &lt;a href="#"&gt;Item 3&lt;/a&gt;
@@ -75,6 +75,19 @@
     &lt;a href="#"&gt;Item 5&lt;/a&gt;
 &lt;/nav&gt;
 </pre></code>
+
+
+<br/>
+
+<h2>Tabs navigation</h2>
+
+<nav class="nav-tabs">
+    <a href="#">Item 1</a>
+    <a href="#">Item 2</a>
+    <a href="#">Item 3</a>
+    <a href="#">Item 4</a>
+    <a href="#">Item 5</a>
+</nav>
 <!-- /VIEWPORT -->   
 
 <% include include/content-post.ejs %>
