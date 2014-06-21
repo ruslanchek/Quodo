@@ -225,12 +225,15 @@ audio {
 }
 .width-fluid-100 {
   width: 100%;
+  min-width: 960px;
 }
 .width-fluid-96 {
   width: 96%;
+  min-width: 960px;
 }
 .width-fluid-90 {
   width: 90%;
+  min-width: 960px;
 }
 .width-fluid-80 {
   width: 80%;
@@ -699,10 +702,10 @@ p {
 .nav-horizontal a:last-of-type {
   border-bottom: none;
 }
-.nav-horizontal.stretch a {
+.nav-stretch a {
   display: table-cell;
   width: 1%;
-  float: none;
+  float: none !important;
   text-align: center;
 }
 .nav-horizontal:after {
@@ -889,6 +892,12 @@ p {
 .font-thin {
   font-weight: 100;
 }
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
 .button {
   display: inline-block;
   vertical-align: top;
@@ -1010,9 +1019,6 @@ code * {
 .demo {
   height: 100%;
 }
-.demo .viewport {
-  margin-left: 20px;
-}
 @media only screen and (max-width: 540px) {
   .demo {
     margin-right: 0;
@@ -1057,7 +1063,7 @@ code * {
   z-index: 2;
 }
 .demo .grid-sample div div {
-  background: #d5dadf;
+  background: #B3D3DD;
   color: #505961;
   text-align: center;
   line-height: 40px;
@@ -1065,6 +1071,7 @@ code * {
   margin-top: 10px;
   margin-bottom: 10px;
   white-space: nowrap;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-border-radius: 2px;
