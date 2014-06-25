@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+a:link {
+  color: #8bbfff;
+}
+a:hover {
+  color: #f0644d;
+}
+a:visited {
+  color: #8bbfff;
+}
+a:active {
+  color: #f0644d;
+}
 *,
 *:before,
 *:after {
@@ -233,10 +246,11 @@ audio {
 }
 .width-fluid-90 {
   width: 90%;
-  min-width: 960px;
+  min-width: 900px;
 }
 .width-fluid-80 {
   width: 80%;
+  min-width: 800px;
 }
 .width-fluid-70 {
   width: 70%;
@@ -519,52 +533,51 @@ h2,
 h3,
 h4,
 h5 {
-  color: #81888d;
   line-height: 1.14814815em;
 }
 h1 {
-  font-size: 2.6em;
+  font-size: 2em;
   margin-bottom: 0.15em;
   line-height: 1.2em;
 }
 h1.subheading {
-  font-size: 2.1em;
+  font-size: 1.8em;
   margin-bottom: 0.4em;
 }
 h2 {
-  font-size: 2.1em;
+  font-size: 1.8em;
   margin-bottom: 0.15em;
   line-height: 1.25em;
 }
 h2.subheading {
-  font-size: 1.75em;
+  font-size: 1.6em;
   margin-bottom: 0.4em;
 }
 h3 {
-  font-size: 1.65em;
+  font-size: 1.6em;
   margin-bottom: 0.2em;
   line-height: 1.25em;
 }
 h3.subheading {
-  font-size: 1.25em;
+  font-size: 1.4em;
   margin-bottom: 0.4em;
 }
 h4 {
-  font-size: 1.25em;
+  font-size: 1.4em;
   margin-bottom: 0.2em;
   line-height: 1.35em;
 }
 h4.subheading {
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 0.4em;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 0.2em;
   line-height: 1.55em;
 }
 h5.subheading {
-  font-size: 0.85em;
+  font-size: 1em;
   margin-bottom: 0.4em;
 }
 h6 {
@@ -574,7 +587,7 @@ h6 {
   color: #505961;
 }
 h6.subheading {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 p {
   margin-top: 0.5em;
@@ -1010,6 +1023,7 @@ html {
 }
 body {
   height: 100%;
+  font-family: 'PT Sans', sans-serif;
 }
 code,
 code * {

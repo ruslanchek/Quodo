@@ -6,13 +6,13 @@ module.exports = function(grunt) {
                     paths: ['less']
                 },
                 files: {
-                    'public/css/quodo.css': 'less/quodo.less'
+                    'public/css/quodo.css': 'assets/less/quodo.less'
                 }
             }
         },
         ejs: {
             all: {
-                src: ['*.ejs', '!include/**/*'],
+                src: ['pages/*.ejs'],
                 dest: 'public/',
                 expand: true,
                 ext: '.html'
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            files: ['less/*.less', '*.ejs', 'include/*.ejs'],
+            files: ['assets/less/*.less', 'pages/*.ejs', 'include/*.ejs'],
             tasks: ['less', 'ejs']
         },
         connect: {
