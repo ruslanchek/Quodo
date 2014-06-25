@@ -1,12 +1,36 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+.color-green {
+  color: #12b496;
+}
+.color-red {
+  color: #f0644d;
+}
+.color-blue {
+  color: #0ea2bb;
+}
+.color-blue-light {
+  color: #8bbfff;
+}
+.background-green {
+  background-color: #12b496;
+}
+.background-red {
+  background-color: #f0644d;
+}
+.background-blue {
+  background-color: #0ea2bb;
+}
+.background-blue-light {
+  background-color: #8bbfff;
+}
 a:link {
-  color: #1f9dff;
+  color: #0ea2bb;
 }
 a:hover {
   color: #f0644d;
 }
 a:visited {
-  color: #1f9dff;
+  color: #0ea2bb;
 }
 a:active {
   color: #f0644d;
@@ -831,14 +855,14 @@ p {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .button-go {
-  background: #60d691;
+  background: #12b496;
   color: #fff;
 }
 .button-go:hover {
-  background: #6fe5a0;
+  background: #21c3a5;
 }
 .button-go:active {
-  background: #51c782;
+  background: #03a587;
 }
 .button-stop {
   background: #f0644d;
@@ -1012,4 +1036,23 @@ code * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.demo .colors-blocks .item {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.demo .colors-blocks .item-color {
+  border: 1px solid #eee;
+}
+.demo .colors-blocks .item-bg {
+  color: #fff;
 }
