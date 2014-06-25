@@ -18,12 +18,22 @@ module.exports = function(grunt) {
                 ext: '.html'
             }
         },
+        copy: {
+            main: {
+                src: './public/pages/*',
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './public'
+            }
+        },
+        clean: ['public/pages'],
         watch: {
             options: {
                 livereload: true
             },
-            files: ['assets/less/*.less', 'pages/*.ejs', 'include/*.ejs'],
-            tasks: ['less', 'ejs']
+            files: ['assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
+            tasks: ['less', 'ejs', 'copy', 'clean']
         },
         connect: {
             server: {
@@ -41,8 +51,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-ejs');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['less', 'ejs', 'watch']);
+    grunt.registerTask('default', ['less', 'ejs', 'copy', 'clean', 'watch']);
 };

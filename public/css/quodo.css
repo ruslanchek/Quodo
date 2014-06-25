@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
 a:link {
-  color: #8bbfff;
+  color: #1f9dff;
 }
 a:hover {
   color: #f0644d;
 }
 a:visited {
-  color: #8bbfff;
+  color: #1f9dff;
 }
 a:active {
   color: #f0644d;
@@ -227,91 +227,6 @@ img {
 audio {
   width: 100%;
 }
-.width-static-960 {
-  width: 960px;
-}
-.width-static-1000 {
-  width: 1000px;
-}
-.width-static-1240 {
-  width: 1240px;
-}
-.width-fluid-100 {
-  width: 100%;
-  min-width: 960px;
-}
-.width-fluid-96 {
-  width: 96%;
-  min-width: 960px;
-}
-.width-fluid-90 {
-  width: 90%;
-  min-width: 900px;
-}
-.width-fluid-80 {
-  width: 80%;
-  min-width: 800px;
-}
-.width-fluid-70 {
-  width: 70%;
-}
-.width-fluid-60 {
-  width: 60%;
-}
-.width-fluid-50 {
-  width: 50%;
-}
-.width-fluid-40 {
-  width: 40%;
-}
-.width-fluid-30 {
-  width: 30%;
-}
-.width-fluid-20 {
-  width: 20%;
-}
-.width-fluid-10 {
-  width: 10%;
-}
-.width-fluid-10.width-static-960,
-.width-fluid-20.width-static-960,
-.width-fluid-30.width-static-960,
-.width-fluid-40.width-static-960,
-.width-fluid-50.width-static-960,
-.width-fluid-60.width-static-960,
-.width-fluid-70.width-static-960,
-.width-fluid-80.width-static-960,
-.width-fluid-90.width-static-960,
-.width-fluid-96.width-static-960,
-.width-fluid-100.width-static-960 {
-  max-width: 960px;
-}
-.width-fluid-10.width-static-1000,
-.width-fluid-20.width-static-1000,
-.width-fluid-30.width-static-1000,
-.width-fluid-40.width-static-1000,
-.width-fluid-50.width-static-1000,
-.width-fluid-60.width-static-1000,
-.width-fluid-70.width-static-1000,
-.width-fluid-80.width-static-1000,
-.width-fluid-90.width-static-1000,
-.width-fluid-96.width-static-1000,
-.width-fluid-100.width-static-1000 {
-  max-width: 1000px;
-}
-.width-fluid-10.width-static-1240,
-.width-fluid-20.width-static-1240,
-.width-fluid-30.width-static-1240,
-.width-fluid-40.width-static-1240,
-.width-fluid-50.width-static-1240,
-.width-fluid-60.width-static-1240,
-.width-fluid-70.width-static-1240,
-.width-fluid-80.width-static-1240,
-.width-fluid-90.width-static-1240,
-.width-fluid-96.width-static-1240,
-.width-fluid-100.width-static-1240 {
-  max-width: 1240px;
-}
 .width-100 {
   width: 100%;
 }
@@ -434,23 +349,6 @@ audio {
   float: left;
   margin-left: 3%;
 }
-@media only screen and (max-width: 540px) {
-  .grid-12 .span-1,
-  .grid-12 .span-2,
-  .grid-12 .span-3,
-  .grid-12 .span-4,
-  .grid-12 .span-5,
-  .grid-12 .span-6,
-  .grid-12 .span-7,
-  .grid-12 .span-8,
-  .grid-12 .span-9,
-  .grid-12 .span-10,
-  .grid-12 .span-11,
-  .grid-12 .span-12 {
-    float: none;
-    width: auto;
-  }
-}
 .grid-10 {
   margin-left: -3%;
 }
@@ -507,21 +405,6 @@ audio {
   float: left;
   margin-left: 3%;
 }
-@media only screen and (max-width: 540px) {
-  .grid-10 .span-1,
-  .grid-10 .span-2,
-  .grid-10 .span-3,
-  .grid-10 .span-4,
-  .grid-10 .span-5,
-  .grid-10 .span-6,
-  .grid-10 .span-7,
-  .grid-10 .span-8,
-  .grid-10 .span-9,
-  .grid-10 .span-10 {
-    float: none;
-    width: auto;
-  }
-}
 .hero-header {
   font-size: 5em;
 }
@@ -536,16 +419,16 @@ h5 {
   line-height: 1.14814815em;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
   margin-bottom: 0.15em;
   line-height: 1.2em;
 }
 h1.subheading {
-  font-size: 1.8em;
+  font-size: 2em;
   margin-bottom: 0.4em;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 2em;
   margin-bottom: 0.15em;
   line-height: 1.25em;
 }
@@ -631,7 +514,7 @@ samp {
 }
 hr {
   margin: 1em 0 2em;
-  border-width: 2px;
+  border-width: 1px;
 }
 ul,
 ol {
@@ -655,16 +538,13 @@ p {
   display: table;
   clear: both;
 }
-.content {
-  margin: 0 20px;
-  min-width: 500px;
-}
 .nav-horizontal,
 .nav-vertical {
   border-bottom: 1px solid #dddfe0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-bottom: 2em;
 }
 .nav-horizontal a,
 .nav-vertical a {
@@ -1018,17 +898,52 @@ label {
   display: block;
   margin-bottom: 1.6em;
 }
+@media only screen and (max-width: 540px) {
+  .span-1,
+  .span-2,
+  .span-3,
+  .span-4,
+  .span-5,
+  .span-6,
+  .span-7,
+  .span-8,
+  .span-9,
+  .span-10,
+  .span-11,
+  .span-12 {
+    float: none !important;
+    width: auto !important;
+  }
+}
 html {
   height: 100%;
 }
 body {
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+  min-width: 1100px;
+}
+@media only screen and (max-width: 540px) {
+  body {
+    min-width: 500px;
+  }
 }
 code,
 code * {
   font-size: 14px !important;
   line-height: 1.45em;
+}
+.wrapper {
+  max-width: 1100px;
+}
+.content {
+  margin: 0 20px;
+  min-width: 900px;
+}
+@media only screen and (max-width: 540px) {
+  .content {
+    min-width: 500px;
+  }
 }
 .demo {
   height: 100%;
