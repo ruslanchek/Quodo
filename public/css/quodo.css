@@ -26,14 +26,39 @@
 a:link {
   color: #0ea2bb;
 }
-a:hover {
-  color: #f0644d;
-}
 a:visited {
   color: #0ea2bb;
 }
+a:hover {
+  color: #f0644d;
+}
 a:active {
   color: #f0644d;
+}
+a.link-dashed {
+  text-decoration: none;
+  position: relative;
+}
+a.link-dashed:after {
+  border-bottom: 1px dashed #0ea2bb;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.075em;
+  height: 0;
+  width: 100%;
+}
+a.link-dashed:link:after {
+  border-bottom-color: #0ea2bb;
+}
+a.link-dashed:visited:after {
+  border-bottom-color: #0ea2bb;
+}
+a.link-dashed:hover:after {
+  border-bottom-color: #f0644d;
+}
+a.link-dashed:hover:after {
+  border-bottom-color: #f0644d;
 }
 *,
 *:before,

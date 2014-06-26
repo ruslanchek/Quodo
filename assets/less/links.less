@@ -2,14 +2,46 @@ a:link {
   color: @base-link-color;
 }
 
-a:hover {
-  color: @base-link-hover-color;
-}
-
 a:visited {
   color: @base-link-visited-color;
 }
 
+a:hover {
+  color: @base-link-hover-color;
+}
+
 a:active {
   color: @base-link-active-color;
+}
+
+
+a.link-dashed {
+  text-decoration: none;
+  position: relative;
+}
+
+a.link-dashed:after {
+  border-bottom: 1px dashed @base-link-visited-color;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.075em;
+  height: 0;
+  width: 100%;
+}
+
+a.link-dashed:link:after {
+  border-bottom-color: @base-link-visited-color;
+}
+
+a.link-dashed:visited:after {
+  border-bottom-color: @base-link-visited-color;
+}
+
+a.link-dashed:hover:after {
+  border-bottom-color: @base-link-hover-color;
+}
+
+a.link-dashed:hover:after {
+  border-bottom-color: @base-link-active-color;
 }
