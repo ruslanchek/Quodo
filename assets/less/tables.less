@@ -3,7 +3,7 @@
 
   th, td {
     text-align: left;
-    padding: 0.75em 1.65ex;
+    padding: 0.5em 1.65ex;
   }
 
   th {
@@ -24,10 +24,6 @@
   }
 }
 
-.table-boxed {
-  border: 1px solid @elements-border-color;
-}
-
 .table-bordered-vertical {
   td, th {
     border-left: 1px solid @elements-border-color;
@@ -43,6 +39,10 @@
       border-left-color: @elements-border-color - 25;
     }
   }
+}
+
+.table-boxed {
+  border: 1px solid @elements-border-color;
 }
 
 .table-stripped {

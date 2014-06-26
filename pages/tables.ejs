@@ -2,6 +2,11 @@
 
 <% include ../include/content-pre.ejs %>
 
+<p>
+    A tables have many classes to apply, that paints the table's elements into the style, that you want. Here is that classes:
+    <samp>.table</samp>, <samp>.table-bordered</samp>, <samp>.table-bordered-vertical</samp>, <samp>.table-boxed</samp>, <samp>.table-stripped</samp>, <samp>.table-hoverable</samp>.
+</p>
+
 <!-- VIEWPORT -->
 <h2>Simple table</h2>
 
@@ -28,14 +33,14 @@
             <td>M5</td>
             <td>459</td>
             <td>295 km/h</td>
-            <td>$75 000 &euro;</td>
+            <td>75 000 &euro;</td>
         </tr>
         <tr>
             <td>Mercedes Benz</td>
             <td>CL 65 AMG</td>
             <td>495</td>
             <td>301 km/h</td>
-            <td>$95 000 &euro;</td>
+            <td>95 000 &euro;</td>
         </tr>
     </tbody>
     <tfoot>
@@ -47,6 +52,27 @@
 </table>
 
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Bordered table</h2>
@@ -74,14 +100,14 @@
             <td>M5</td>
             <td>459</td>
             <td>295 km/h</td>
-            <td>$75 000 &euro;</td>
+            <td>75 000 &euro;</td>
         </tr>
         <tr>
             <td>Mercedes Benz</td>
             <td>CL 65 AMG</td>
             <td>495</td>
             <td>301 km/h</td>
-            <td>$95 000 &euro;</td>
+            <td>95 000 &euro;</td>
         </tr>
     </tbody>
     <tfoot>
@@ -93,6 +119,27 @@
 </table>
 
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-bordered width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Boxed table</h2>
@@ -120,14 +167,14 @@
         <td>M5</td>
         <td>459</td>
         <td>295 km/h</td>
-        <td>$75 000 &euro;</td>
+        <td>75 000 &euro;</td>
     </tr>
     <tr>
         <td>Mercedes Benz</td>
         <td>CL 65 AMG</td>
         <td>495</td>
         <td>301 km/h</td>
-        <td>$95 000 &euro;</td>
+        <td>95 000 &euro;</td>
     </tr>
     </tbody>
     <tfoot>
@@ -139,6 +186,27 @@
 </table>
 
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-vertical-border table-boxed width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Boxed and bordered table</h2>
@@ -166,14 +234,14 @@
         <td>M5</td>
         <td>459</td>
         <td>295 km/h</td>
-        <td>$75 000 &euro;</td>
+        <td>75 000 &euro;</td>
     </tr>
     <tr>
         <td>Mercedes Benz</td>
         <td>CL 65 AMG</td>
         <td>495</td>
         <td>301 km/h</td>
-        <td>$95 000 &euro;</td>
+        <td>95 000 &euro;</td>
     </tr>
     </tbody>
     <tfoot>
@@ -184,8 +252,28 @@
     </tfoot>
 </table>
 
-
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-bordered table-boxed width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Boxed and vertical-bordered table</h2>
@@ -213,14 +301,14 @@
         <td>M5</td>
         <td>459</td>
         <td>295 km/h</td>
-        <td>$75 000 &euro;</td>
+        <td>75 000 &euro;</td>
     </tr>
     <tr>
         <td>Mercedes Benz</td>
         <td>CL 65 AMG</td>
         <td>495</td>
         <td>301 km/h</td>
-        <td>$95 000 &euro;</td>
+        <td>95 000 &euro;</td>
     </tr>
     </tbody>
     <tfoot>
@@ -231,8 +319,28 @@
     </tfoot>
 </table>
 
-
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-bordered-vertical table-boxed width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Boxed and full-bordered table</h2>
@@ -259,14 +367,14 @@
             <td>M5</td>
             <td>459</td>
             <td>295 km/h</td>
-            <td>$75 000 &euro;</td>
+            <td>75 000 &euro;</td>
         </tr>
         <tr>
             <td>Mercedes Benz</td>
             <td>CL 65 AMG</td>
             <td>495</td>
             <td>301 km/h</td>
-            <td>$95 000 &euro;</td>
+            <td>95 000 &euro;</td>
         </tr>
     </tbody>
     <tfoot>
@@ -277,13 +385,33 @@
     </tfoot>
 </table>
 
-
-<br/>
 <br/>
 
-<h2>Hoverable table</h2>
+<code><pre class="prettyprint">
+&lt;table class="table table-bordered-vertical table-bordered table-boxed width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
 
-<table class="table table-hovered width-100">
+<br/>
+
+<h2>Stripped table</h2>
+
+<table class="table table-stripped table-bordered table-boxed table-bordered-vertical width-100">
     <thead>
         <tr>
             <th>Make</th>
@@ -306,14 +434,28 @@
             <td>M5</td>
             <td>459</td>
             <td>295 km/h</td>
-            <td>$75 000 &euro;</td>
+            <td>75 000 &euro;</td>
         </tr>
         <tr>
             <td>Mercedes Benz</td>
             <td>CL 65 AMG</td>
             <td>495</td>
             <td>301 km/h</td>
-            <td>$95 000 &euro;</td>
+            <td>95 000 &euro;</td>
+        </tr>
+        <tr>
+            <td>Lamborghini</td>
+            <td>Gallardo LP750</td>
+            <td>750</td>
+            <td>345 km/h</td>
+            <td>375 000 &euro;</td>
+        </tr>
+        <tr>
+            <td>Koenigsegg</td>
+            <td>Agera</td>
+            <td>940</td>
+            <td>400 km/h</td>
+            <td>95 000 &euro;</td>
         </tr>
     </tbody>
     <tfoot>
@@ -324,8 +466,28 @@
     </tfoot>
 </table>
 
-
 <br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-stripped table-bordered table-boxed table-bordered-vertical width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
 <br/>
 
 <h2>Hoverable table</h2>
@@ -353,14 +515,14 @@
             <td>M5</td>
             <td>459</td>
             <td>295 km/h</td>
-            <td>$75 000 &euro;</td>
+            <td>75 000 &euro;</td>
         </tr>
         <tr>
             <td>Mercedes Benz</td>
             <td>CL 65 AMG</td>
             <td>495</td>
             <td>301 km/h</td>
-            <td>$95 000 &euro;</td>
+            <td>95 000 &euro;</td>
         </tr>
     </tbody>
     <tfoot>
@@ -370,6 +532,28 @@
         </tr>
     </tfoot>
 </table>
+
+<br/>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-hoverable width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
 <!-- /VIEWPORT -->   
 
 <% include ../include/content-post.ejs %>

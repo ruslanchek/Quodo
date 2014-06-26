@@ -1,14 +1,16 @@
 .nav-horizontal,
 .nav-vertical {
   border-bottom: 1px solid @elements-border-color;
-  .box-sizing(border-box);
   margin-bottom: 2em;
+
+  .box-sizing(border-box);
 
   a {
     display: inline-block;
     padding: 1em 2.5ex;
     color: @base-text-color;
     text-decoration: none;
+
     .box-sizing(border-box);
     .animation-ease-in-quad(50ms);
   }
@@ -31,6 +33,24 @@
   }
 }
 
+.nav-wide {
+  a {
+    padding: 1.25em 2.5ex;
+  }
+}
+
+.nav-narrow {
+  a {
+    padding: 0.75em 2.5ex;
+  }
+}
+
+.nav-tight {
+  a {
+    padding: 0.5em 2.5ex;
+  }
+}
+
 .nav-horizontal {
   a {
     .border-radius(@base-border-radius @base-border-radius 0 0);
@@ -46,12 +66,16 @@
   }
 }
 
-.nav-stretch {
+.nav-horizontal.nav-stretched {
   a {
     display: table-cell;
     width: 1%;
     float: none !important;
     text-align: center;
+  }
+
+  a:last-child {
+    .border-radius(0 @base-border-radius @base-border-radius 0);
   }
 }
 
@@ -159,8 +183,6 @@
 }
 
 .nav-tabs {
-
-
   a {
 
   }
