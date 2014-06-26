@@ -251,6 +251,45 @@ img {
 audio {
   width: 100%;
 }
+.table {
+  table-layout: fixed;
+}
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.75em 1.65ex;
+}
+.table th {
+  font-weight: bold;
+  border-bottom: 1px solid #dddfe0;
+}
+.table tfoot {
+  background: #dddfe0;
+}
+.table-bordered tbody td {
+  border-bottom: 1px solid #dddfe0;
+}
+.table-boxed {
+  border: 1px solid #dddfe0;
+}
+.table-bordered-vertical td,
+.table-bordered-vertical th {
+  border-left: 1px solid #dddfe0;
+}
+.table-bordered-vertical td:first-child,
+.table-bordered-vertical th:first-child {
+  border-left: none;
+}
+.table-bordered-vertical tfoot td,
+.table-bordered-vertical tfoot th {
+  border-left-color: #c4c6c7;
+}
+.table-stripped tbody tr:nth-child(even) {
+  background: #eff1f2;
+}
+.table-hoverable tbody tr:hover {
+  background: #e9ebec;
+}
 .width-100 {
   width: 100%;
 }

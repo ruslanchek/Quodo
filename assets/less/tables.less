@@ -1,0 +1,62 @@
+.table {
+  table-layout: fixed;
+
+  th, td {
+    text-align: left;
+    padding: 0.75em 1.65ex;
+  }
+
+  th {
+    font-weight: bold;
+    border-bottom: 1px solid @elements-border-color;
+  }
+
+  tfoot {
+    background: @panel-color-light;
+  }
+}
+
+.table-bordered {
+  tbody {
+    td {
+      border-bottom: 1px solid @elements-border-color;
+    }
+  }
+}
+
+.table-boxed {
+  border: 1px solid @elements-border-color;
+}
+
+.table-bordered-vertical {
+  td, th {
+    border-left: 1px solid @elements-border-color;
+  }
+
+  td:first-child,
+  th:first-child {
+    border-left: none;
+  }
+
+  tfoot {
+    td, th {
+      border-left-color: @elements-border-color - 25;
+    }
+  }
+}
+
+.table-stripped {
+  tbody {
+    tr:nth-child(even) {
+      background: @elements-bg-color-light + 18;
+    }
+  }
+}
+
+.table-hoverable {
+  tbody {
+    tr:hover {
+      background: @elements-bg-color-light + 12;
+    }
+  }
+}
