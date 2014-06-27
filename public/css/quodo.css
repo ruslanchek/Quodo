@@ -917,6 +917,14 @@ p {
   background: #616970;
   color: #fff;
 }
+.section .section-thumb {
+  float: left;
+  margin-right: 2.5ex;
+}
+.section .section-body {
+  overflow: hidden;
+  zoom: 1;
+}
 .font-thin {
   font-weight: 100;
 }
