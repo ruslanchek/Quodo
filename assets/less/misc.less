@@ -25,10 +25,23 @@
   .section-thumb {
     float: left;
     margin-right: 2.5ex;
+    margin-top: 0.35em;
   }
 
   .section-body {
     overflow: hidden;
     zoom: 1;
+
+    > p.date {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
   }
+}
+
+
+// Date
+.date {
+  font-size: 0.9em;
+  color: @color-grey-light;
 }

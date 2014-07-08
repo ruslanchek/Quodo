@@ -1,4 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+.color-grey-light {
+  color: #828b93;
+}
+.color-grey {
+  color: #69727a;
+}
+.color-grey-dark {
+  color: #5a636b;
+}
 .color-green {
   color: #12b496;
 }
@@ -10,6 +19,15 @@
 }
 .color-blue-light {
   color: #8bbfff;
+}
+.background-grey-light {
+  background-color: #828b93;
+}
+.background-grey {
+  background-color: #69727a;
+}
+.background-grey-dark {
+  background-color: #5a636b;
 }
 .background-green {
   background-color: #12b496;
@@ -316,7 +334,7 @@ audio {
   border-bottom: 1px solid #dddfe0;
 }
 .table tfoot {
-  background: #dddfe0;
+  background: #e5e7e8;
 }
 .table-bordered tbody td {
   border-bottom: 1px solid #dddfe0;
@@ -337,10 +355,10 @@ audio {
   border: 1px solid #dddfe0;
 }
 .table-stripped tbody tr:nth-child(even) {
-  background: #eff1f2;
+  background: #f3f5f6;
 }
 .table-hoverable tbody tr:hover {
-  background: #e9ebec;
+  background: #eff1f2;
 }
 .width-100 {
   width: 100%;
@@ -920,10 +938,19 @@ p {
 .section .section-thumb {
   float: left;
   margin-right: 2.5ex;
+  margin-top: 0.35em;
 }
 .section .section-body {
   overflow: hidden;
   zoom: 1;
+}
+.section .section-body > p.date {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.date {
+  font-size: 0.9em;
+  color: #828b93;
 }
 .font-thin {
   font-weight: 100;
