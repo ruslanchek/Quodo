@@ -65,7 +65,7 @@ a.link-dashed:after {
   bottom: -0.075em;
   height: 0;
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.55;
 }
 a.link-dashed:link:after {
   border-bottom-color: #0ea2bb;
@@ -76,7 +76,7 @@ a.link-dashed:visited:after {
 a.link-dashed:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-dashed:hover:after {
+a.link-dashed:active:after {
   border-bottom-color: #f0644d;
 }
 a.link-underlined {
@@ -102,7 +102,7 @@ a.link-underlined:visited:after {
 a.link-underlined:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-underlined:hover:after {
+a.link-underlined:active:after {
   border-bottom-color: #f0644d;
 }
 *,
@@ -1015,10 +1015,10 @@ p {
   color: #fff;
 }
 .button-stop:hover {
-  background: #ff735c;
+  background: #e1553e;
 }
 .button-stop:active {
-  background: #e1553e;
+  background: #ff735c;
 }
 input[type="text"],
 input[type="password"],
@@ -1036,9 +1036,12 @@ input[type="datetime-local"],
 textarea {
   display: block;
   outline: none;
-  border: 1px solid transparent;
-  background: #e7e9ea;
+  border: none;
+  background: #f6f8f9;
   border-radius: 2px;
+  padding: 0.45em 1ex;
+  font-size: 1em;
+  color: #505961;
   -webkit-transition: all 150ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
   -moz-transition: all 150ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
   -o-transition: all 150ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
@@ -1047,22 +1050,49 @@ textarea {
   -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  padding: 0.45em 1ex;
-  font-size: 1em;
-  color: #505961;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px transparent;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px transparent;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px transparent;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="phone"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+input[type="datetime"]:hover,
+input[type="date"]:hover,
+input[type="search"]:hover,
+input[type="range"]:hover,
+input[type="file"]:hover,
+input[type="datetime-local"]:hover,
+textarea:hover {
+  background: #eceeef;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="phone"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="datetime"]:focus,
+input[type="date"]:focus,
+input[type="search"]:focus,
+input[type="range"]:focus,
+input[type="file"]:focus,
+input[type="datetime-local"]:focus,
+textarea:focus {
+  background: #eceeef;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #8bbfff;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #8bbfff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #8bbfff;
 }
 select {
   display: block;
   outline: none;
   border: none;
-}
-input:hover,
-textarea:hover {
-  background: #e2e4e5;
-}
-input:focus,
-textarea:focus {
-  border-color: #8bbfff;
 }
 label {
   display: block;
