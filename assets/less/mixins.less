@@ -2,10 +2,18 @@
   text-shadow: @string;
 }
 
-.box-shadow (@string) {
-  -webkit-box-shadow: @string;
-  -moz-box-shadow:    @string;
-  box-shadow:         @string;
+.box-shadow (@shadow) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow:    @shadow;
+  box-shadow:         @shadow;
+}
+
+.box-shadow-multi (@shadow, ...) {
+  @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+
+  -webkit-box-shadow: @props;
+  -moz-box-shadow:    @props;
+  box-shadow:         @props;
 }
 
 .drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
