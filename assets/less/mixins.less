@@ -166,7 +166,7 @@
   }
 }
 
-.font-face(@family: arial, @url, @weight: normal, @style: normal){
+.font-face (@family: arial, @url, @weight: normal, @style: normal){
   @font-face{
     font-family: @family;
     src:url('@{url}.eot');
@@ -177,4 +177,33 @@
     font-weight: @weight;
     font-style: @style;
   }
+}
+
+.translucent-background (@var-color, @var-alpha) {
+  .recursion(@var-color, @var-alpha) when (iscolor(@var-color)) and (isnumber(@var-alpha)) {
+    @var-hsla: hsla(hue(@var-color), saturation(@var-color), lightness(@var-color), @var-alpha);
+    @var-argb: argb(@var-hsla);
+    background-color: @var-hsla;
+    /* IE hacks */
+    zoom: 1;
+    background-color: transparent\9;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.gradient(startColorstr=@{var-argb}, endColorstr=@{var-argb})";
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{var-argb}, endColorstr=@{var-argb})";
+  }
+  .recursion(@var-color, @var-alpha);
+}
+
+.translucent-color (@var-color, @var-alpha) {
+  .recursion(@var-color, @var-alpha) when (iscolor(@var-color)) and (isnumber(@var-alpha)) {
+    color: hsla(hue(@var-color), saturation(@var-color), lightness(@var-color), @var-alpha);
+  }
+  .recursion(@var-color, @var-alpha);
+}
+
+.translucent-border-color (@var-color, @var-alpha) {
+  .recursion(@var-color, @var-alpha) when (iscolor(@var-color)) and (isnumber(@var-alpha)) {
+    border-color: hsla(hue(@var-color), saturation(@var-color), lightness(@var-color), @var-alpha);
+    #background > .clip(padding-box);
+  }
+  .recursion(@var-color, @var-alpha);
 }
