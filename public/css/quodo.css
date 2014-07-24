@@ -977,7 +977,7 @@ p {
   box-shadow: none;
   cursor: pointer;
   background: #dddfe0;
-  padding: 0.75em 2.5ex 0.8em;
+  padding: 0.8em 2.5ex;
   outline: none;
   -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
@@ -999,6 +999,15 @@ p {
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.button-fat {
+  padding: 1.1em 2.5ex;
+}
+.button-slim {
+  padding: 0.55em 2.5ex;
+}
+.button-skinny {
+  padding: 0.4em 2.5ex;
 }
 .button-go {
   background: #12b496;
