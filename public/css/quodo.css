@@ -992,10 +992,10 @@ p {
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .button:hover {
-  background: #ced0d1;
+  background: #eceeef;
 }
 .button:active {
-  background: #c4c6c7;
+  background: #ced0d1;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -1024,10 +1024,20 @@ p {
   color: #fff;
 }
 .button-stop:hover {
-  background: #e1553e;
+  background: #ff735c;
 }
 .button-stop:active {
-  background: #ff735c;
+  background: #e1553e;
+}
+.button-action {
+  background: #0ea2bb;
+  color: #fff;
+}
+.button-action:hover {
+  background: #1db1ca;
+}
+.button-action:active {
+  background: #0093ac;
 }
 input[type="text"],
 input[type="password"],
