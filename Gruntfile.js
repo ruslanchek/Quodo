@@ -25,6 +25,14 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './public'
+            },
+
+            js: {
+                src: './assets/js/*',
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './public/js'
             }
         },
         clean: ['public/pages'],
@@ -32,7 +40,7 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            files: ['assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
+            files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
             tasks: ['less', 'ejs', 'copy', 'clean']
         },
         connect: {

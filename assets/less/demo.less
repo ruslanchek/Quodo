@@ -34,8 +34,36 @@ body {
 .demo {
   height: 100%;
 
+  code {
+    display: none;
+  }
+
+  .code-show {
+    background: @panel-color-light + 20;
+    padding: 10px;
+
+    a {
+      .button;
+      font-size: 11px;
+      font-family: Arial;
+      font-weight: bold;
+    }
+  }
+
   .viewport {
 
+  }
+
+  .index-links {
+    text-align:  center;
+    margin: 0 15%;
+
+    a {
+      display: inline-block;
+      margin: 0 1.35ex;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
   }
 
   @media only screen and (max-width : @viewport-min-width) {
