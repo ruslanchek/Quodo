@@ -5,8 +5,8 @@ var Code = function(){
                 $btn = $('<div/>');
 
             $btn.addClass('code-show');
-            $btn.html('<a href="#">&lt;code&gt;</a>');
-            $code.after($btn);
+            $btn.html('<a href="#">Code</a>');
+            $code.before($btn);
             $btn.find('a').on('click', function(e){
                 $code.slideToggle(200);
                 e.preventDefault();
