@@ -1194,6 +1194,7 @@ label {
   .span-12 {
     float: none !important;
     width: auto !important;
+    margin-bottom: 1.5em;
   }
 }
 html {
