@@ -13,10 +13,10 @@
 </head>
 
 	<body class="demo">
-		<div class="hero">
+		<div class="nav-hero">
     <div class="wrapper">
         <div class="content">
-            <a href="#" class="logo">Quodo</a>
+            <a href="/" class="logo">Quodo</a>
         </div>
     </div>
 </div>
@@ -25,17 +25,21 @@
 		        <div class="grid-12">
 		            <div class="span-3">
 		                <nav class="nav-vertical nav-bordered">
-    <a  href="typography.html">Typography</a>
-    <a  href="grid-system.html">Grid system</a>
-    <a  href="widths.html">Widths</a>
-    <a  href="forms.html">Forms</a>
-    <a class="active" href="tables.html">Tables</a>
-    <a  href="navigation.html">Navigation</a>
-    <a  href="labels.html">Labels</a>
-    <a  href="colors.html">Colors</a>
-    <a  href="utils.html">Utils</a>
-    <a  href="links.html">Links</a>
-    <a  href="misc.html">Misc</a>
+    <a class="" href="typography.html">Typography</a>
+<a class="" href="grid-system.html">Grid system</a>
+<a class="" href="widths.html">Widths</a>
+<a class="" href="forms.html">Forms</a>
+<a class="" href="buttons.html">Buttons</a>
+<a class="active" href="tables.html">Tables</a>
+<a class="" href="navigation.html">Navigation</a>
+<a class="" href="labels.html">Labels</a>
+<a class="" href="colors.html">Colors</a>
+<a class="" href="utils.html">Utils</a>
+<a class="" href="links.html">Links</a>
+<a class="" href="alerts.html">Alerts</a>
+<a class="" href="breadcrumbs.html">Breadcrumbs</a>
+<a class="" href="misc.html">Misc</a>
+<a class="" href="less-mixins.html">LESS Mixins</a>
 </nav>
 		            </div>
 		            <div class="span-9">
@@ -50,6 +54,72 @@
 </p>
 
 <!-- VIEWPORT -->
+<h2>Boxed and bordered table</h2>
+
+<table class="table table-bordered table-boxed width-100">
+    <thead>
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>H/P</th>
+        <th>Max speed</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Audi</td>
+        <td>RS6</td>
+        <td>430</td>
+        <td>250 km/h</td>
+        <td>69 000 &euro;</td>
+    </tr>
+    <tr>
+        <td>BMW</td>
+        <td>M5</td>
+        <td>459</td>
+        <td>295 km/h</td>
+        <td>75 000 &euro;</td>
+    </tr>
+    <tr>
+        <td>Mercedes Benz</td>
+        <td>CL 65 AMG</td>
+        <td>495</td>
+        <td>301 km/h</td>
+        <td>95 000 &euro;</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">Total price</td>
+        <td>238 000 &euro;</td>
+    </tr>
+    </tfoot>
+</table>
+
+<code><pre class="prettyprint">
+&lt;table class="table table-bordered table-boxed width-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre></code>
+
+<br/>
+<br/>
+
 <h2>Simple table</h2>
 
 <table class="table width-100">
@@ -231,73 +301,6 @@
 
 <code><pre class="prettyprint">
 &lt;table class="table table-vertical-border table-boxed width-100"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;...&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;...&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;tfoot&gt;
-        &lt;tr&gt;
-            &lt;td&gt;...&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tfoot&gt;
-&lt;/table&gt;
-</pre></code>
-
-<br/>
-
-<h2>Boxed and bordered table</h2>
-
-<table class="table table-bordered table-boxed width-100">
-    <thead>
-    <tr>
-        <th>Make</th>
-        <th>Model</th>
-        <th>H/P</th>
-        <th>Max speed</th>
-        <th>Price</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Audi</td>
-        <td>RS6</td>
-        <td>430</td>
-        <td>250 km/h</td>
-        <td>69 000 &euro;</td>
-    </tr>
-    <tr>
-        <td>BMW</td>
-        <td>M5</td>
-        <td>459</td>
-        <td>295 km/h</td>
-        <td>75 000 &euro;</td>
-    </tr>
-    <tr>
-        <td>Mercedes Benz</td>
-        <td>CL 65 AMG</td>
-        <td>495</td>
-        <td>301 km/h</td>
-        <td>95 000 &euro;</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <td colspan="4">Total price</td>
-        <td>238 000 &euro;</td>
-    </tr>
-    </tfoot>
-</table>
-
-<br/>
-
-<code><pre class="prettyprint">
-&lt;table class="table table-bordered table-boxed width-100"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;...&lt;/th&gt;
@@ -605,12 +608,7 @@
         </div>
         
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="prettyfy/prettify.js"></script>
-<script type="text/javascript">
-    $(function(){
-        prettyPrint();
-    });
-</script>
+<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

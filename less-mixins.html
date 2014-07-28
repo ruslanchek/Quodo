@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>Widths &mdash; Quodo LESS-Framework</title>
+    <title>LESS Mixins &mdash; Quodo LESS-Framework</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,7 @@
 		                <nav class="nav-vertical nav-bordered">
     <a class="" href="typography.html">Typography</a>
 <a class="" href="grid-system.html">Grid system</a>
-<a class="active" href="widths.html">Widths</a>
+<a class="" href="widths.html">Widths</a>
 <a class="" href="forms.html">Forms</a>
 <a class="" href="buttons.html">Buttons</a>
 <a class="" href="tables.html">Tables</a>
@@ -39,47 +39,44 @@
 <a class="" href="alerts.html">Alerts</a>
 <a class="" href="breadcrumbs.html">Breadcrumbs</a>
 <a class="" href="misc.html">Misc</a>
-<a class="" href="less-mixins.html">LESS Mixins</a>
+<a class="active" href="less-mixins.html">LESS Mixins</a>
 </nav>
 		            </div>
 		            <div class="span-9">
 		                <div class="viewport">
-                            <h1 class="font-thin">Widths</h1>
+                            <h1 class="font-thin">LESS Mixins</h1>
                             <hr/>
 
 
 <!-- VIEWPORT -->
+<code>.text-shadow (@string)</code>
 
-<h2>Percentage widths</h2>
+<code>.box-shadow (@shadow)</code>
 
-<div class="container grid-sample">
-    <div>
-        <div class="width-10">.width-10</div>
-        <div class="width-20">.width-20</div>
-        <div class="width-25">.width-25</div>
-        <div class="width-30">.width-30</div>
-        <div class="width-33">.width-33</div>
-        <div class="width-35">.width-35</div>
-        <div class="width-40">.width-40</div>
-        <div class="width-50">.width-50</div>
-        <div class="width-60">.width-60</div>
-        <div class="width-66">.width-66</div>
-        <div class="width-70">.width-70</div>
-        <div class="width-75">.width-75</div>
-        <div class="width-80">.width-80</div>
-        <div class="width-90">.width-90</div>
-        <div class="width-100">.width-100</div>
-    </div>
-</div>
+<code>.box-shadow-multi (@shadow, ...)</code>
 
-<br/>
+<code>.box-sizing (@type: border-box)</code>
 
-<code><pre class="prettyprint">
-&lt;div class="width-10"&gt;...&lt;/div&gt;
-&lt;div class="width-100"&gt;...&lt;/div&gt;</pre></code>
+<code>.border-radius (@radius: 5px)</code>
+
+<code>.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0)</code>
+
+<code>.opacity (@opacity: 0.5)</code>
+
+<code>.gradient (@startColor: #eee, @endColor: white)</code>
+
+<code>.horizontal-gradient (@startColor: #eee, @endColor: white)</code>
+
+<code>.clearfix ()</code>
+
+<code>.font-face (@family: arial, @url, @weight: normal, @style: normal)</code>
+
+<code>.translucent-background (@var-color, @var-alpha)</code>
+
+<code>.translucent-color (@var-color, @var-alpha)</code>
+
+<code>.translucent-border-color (@var-color, @var-alpha)</code>
 <!-- /VIEWPORT -->
-
-<br/><br/>
 
                         </div>
                     </div>
