@@ -890,6 +890,17 @@ p {
 .nav-vertical.nav-light a {
   border: none;
 }
+.nav-hero {
+  background: #222222;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  min-width: 540px;
+}
+.nav-hero .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1030,6 +1041,16 @@ p {
 .button-stop:active {
   background: #e1553e;
 }
+.button-attention {
+  background: #ffe675;
+  color: #000;
+}
+.button-attention:hover {
+  background: #fff584;
+}
+.button-attention:active {
+  background: #f0d766;
+}
 .button-action {
   background: #0ea2bb;
   color: #fff;
@@ -1135,6 +1156,34 @@ label {
     width: auto !important;
   }
 }
+.alert {
+  background: #dddfe0;
+  margin-bottom: 1.5em;
+  padding: 0.75em 2.5ex;
+  display: block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.alert-error {
+  background: #f0644d;
+  color: #fff;
+}
+.alert-attention {
+  background: #ffe675;
+  color: #000;
+}
+.alert-ok {
+  background: #12b496;
+  color: #fff;
+}
+.alert-info {
+  background: #0ea2bb;
+  color: #fff;
+}
 html {
   height: 100%;
 }
@@ -1203,40 +1252,6 @@ body {
   .demo .viewport {
     margin-left: 0;
   }
-}
-.demo .hero {
-  background: #222;
-  padding: 20px 0;
-  margin-bottom: 50px;
-  min-width: 540px;
-}
-.demo .hero .description {
-  color: #81888D;
-}
-.demo .hero .logo {
-  margin-bottom: 0;
-  margin-top: 0;
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-.demo .hero .logo .text {
-  font-family: 'Scada', sans-serif;
-  font-size: 11px;
-  position: absolute;
-  line-height: 1.4em;
-  top: 130px;
-  left: 67px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-.demo .hero .logo i {
-  display: inline;
-  margin: 0;
-  color: #57616a;
-  position: relative;
-  z-index: 2;
 }
 .demo .grid-sample div div {
   background: #B3D3DD;
