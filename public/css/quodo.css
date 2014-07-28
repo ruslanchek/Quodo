@@ -1043,7 +1043,7 @@ p {
 }
 .button-attention {
   background: #ffe675;
-  color: #000;
+  color: #222222;
 }
 .button-attention:hover {
   background: #fff584;
@@ -1174,7 +1174,7 @@ label {
 }
 .alert-attention {
   background: #ffe675;
-  color: #000;
+  color: #222222;
 }
 .alert-ok {
   background: #12b496;
