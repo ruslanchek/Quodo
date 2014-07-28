@@ -15,6 +15,9 @@
   color: #f0644d;
 }
 .color-yellow {
+  color: #ffc000;
+}
+.color-yellow-light {
   color: #ffe675;
 }
 .color-blue {
@@ -39,6 +42,9 @@
   background-color: #f0644d;
 }
 .background-yellow {
+  background-color: #ffc000;
+}
+.background-yellow-light {
   background-color: #ffe675;
 }
 .background-blue {
@@ -1048,14 +1054,14 @@ p {
   background: #e1553e;
 }
 .button-attention {
-  background: #ffe675;
-  color: #222222;
+  background: #ffc000;
+  color: #fff;
 }
 .button-attention:hover {
-  background: #fff584;
+  background: #ffcf0f;
 }
 .button-attention:active {
-  background: #f0d766;
+  background: #f0b100;
 }
 .button-action {
   background: #0ea2bb;
