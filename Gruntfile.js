@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             }
         },
         copy: {
-            main: {
+            html: {
                 src: './public/pages/*',
                 filter: 'isFile',
                 expand: true,
@@ -33,6 +33,14 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './public/js'
+            },
+
+            dist: {
+                src: ['./assets/js/*', '!./assets/js/demo.js'],
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/js'
             }
         },
         clean: ['public/pages'],
