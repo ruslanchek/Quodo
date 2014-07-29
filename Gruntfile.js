@@ -35,21 +35,37 @@ module.exports = function(grunt) {
                 dest: './public/js'
             },
 
-            dist: {
+            dist_js: {
                 src: ['./assets/js/*', '!./assets/js/demo.js'],
                 filter: 'isFile',
                 expand: true,
                 flatten: true,
                 dest: './dist/js'
+            },
+
+            dist_css: {
+                src: ['./public/css/*'],
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/css'
+            },
+
+            dist_less: {
+                src: ['./assets/less/*', '!./assets/less/demo.less'],
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/less'
             }
         },
-        clean: ['public/pages'],
+        clean: ['public/pages', 'dist'],
         watch: {
             options: {
                 livereload: true
             },
             files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
-            tasks: ['less', 'ejs', 'copy', 'clean']
+            tasks: ['less', 'ejs', 'copy:html', 'copy:js', 'clean']
         },
         connect: {
             server: {
@@ -72,5 +88,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['less', 'ejs', 'copy', 'clean', 'watch']);
+    grunt.registerTask('default', ['less', 'ejs', 'copy:html', 'copy:js', 'clean', 'watch']);
+    grunt.registerTask('dist', ['copy:dist_js', 'copy:dist_css', 'copy:dist_less']);
 };
