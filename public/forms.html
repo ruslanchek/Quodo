@@ -6,7 +6,7 @@
     <title>Forms &mdash; Quodo LESS-Framework</title>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta name="viewport" content="initial-scale = 1.0, minimuim-scale=1.0 maximum-scale = 1.0" />
 
     <link rel="stylesheet" href="css/quodo.css" />
     <link rel="stylesheet" href="prettyfy/prettify.css">
@@ -50,20 +50,24 @@
 
 <!-- VIEWPORT -->  
 <h2>Default form</h2>
-<div class="topic topic-bordered width-50">
-    <form method="post" action="" class="form">
-        <label>
-            Email
-            <input type="email" name="user-email" class="width-100" placeholder="Please, type your e-mail" />
-        </label>
+<div class="grid-10">
+    <div class="span-5">
+        <div class="topic topic-bordered">
+            <form method="post" action="" class="form">
+                <label>
+                    Email
+                    <input type="email" name="user-email" class="width-100" placeholder="Please, type your e-mail" />
+                </label>
 
-        <label>
-            Password
-            <input type="password" name="user-password" class="width-100" />
-        </label>
+                <label>
+                    Password
+                    <input type="password" name="user-password" class="width-100" />
+                </label>
 
-        <button class="button button-go">Log in</button>
-    </form>
+                <button class="button button-go">Log in</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <code><pre class="prettyprint">
@@ -86,18 +90,22 @@
 <br/><br/>
 
 <h2>Stretched form</h2>
-<div class="topic topic-bordered width-50">
-    <form method="post" action="" class="form">
-        <label>
-            <input type="email" name="user-email" placeholder="Email" class="width-100" />
-        </label>
+<div class="grid-10">
+    <div class="span-5">
+        <div class="topic topic-bordered">
+            <form method="post" action="" class="form">
+                <label>
+                    <input type="email" name="user-email" placeholder="Email" class="width-100" />
+                </label>
 
-        <label>
-            <input type="password" name="user-password" placeholder="Password" class="width-100" />
-        </label>
+                <label>
+                    <input type="password" name="user-password" placeholder="Password" class="width-100" />
+                </label>
 
-        <button class="button button-go width-100">Log in</button>
-    </form>
+                <button class="button button-go width-100">Log in</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <code><pre class="prettyprint">

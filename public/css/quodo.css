@@ -831,7 +831,7 @@ a.link-underlined.color-blue-light:after {
 .nav-vertical a.active {
   background: #dddfe0;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 320px) {
   .nav-horizontal,
   .nav-vertical {
     position: static;
@@ -1016,7 +1016,7 @@ a.link-underlined.color-blue-light:after {
   background: #222222;
   padding: 20px 0;
   margin-bottom: 50px;
-  min-width: 540px;
+  min-width: 320px;
 }
 .nav-hero .logo {
   color: #fff;
@@ -1255,7 +1255,7 @@ label {
   font-size: 0.9em;
   color: #828b93;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 320px) {
   .span-1,
   .span-2,
   .span-3,
@@ -1281,9 +1281,9 @@ body {
   font-family: 'PT Sans', sans-serif;
   min-width: 1100px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 320px) {
   body {
-    min-width: 500px;
+    min-width: 280px;
   }
 }
 .wrapper {
@@ -1293,9 +1293,9 @@ body {
   margin: 0 20px;
   min-width: 900px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 320px) {
   .content {
-    min-width: 500px;
+    min-width: 280px;
   }
 }
 .demo {
@@ -1325,7 +1325,6 @@ body {
 }
 .demo .index-links {
   text-align: center;
-  margin: 0 15%;
 }
 .demo .index-links a {
   display: inline-block;
@@ -1333,7 +1332,7 @@ body {
   font-size: 1.2em;
   line-height: 1.8em;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 320px) {
   .demo {
     margin-right: 0;
     height: auto;
