@@ -563,6 +563,18 @@ ol li {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.opacity-25 {
+  opacity: 0.75;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-75 {
+  opacity: 0.25;
+}
+.opacity-100 {
+  opacity: 0;
+}
 a:link {
   color: #0ea2bb;
 }
@@ -1032,7 +1044,7 @@ a.link-underlined.color-blue-light:after {
   line-height: 1;
   text-align: center;
   text-decoration: none;
-  color: #505961;
+  color: #505961 !important;
   margin: 0;
   border: 0;
   border-radius: 2px;
@@ -1073,7 +1085,7 @@ a.link-underlined.color-blue-light:after {
 }
 .button-go {
   background: #12b496;
-  color: #fff;
+  color: #fff !important;
 }
 .button-go:hover {
   background: #21c3a5;
@@ -1083,7 +1095,7 @@ a.link-underlined.color-blue-light:after {
 }
 .button-stop {
   background: #f0644d;
-  color: #fff;
+  color: #fff !important;
 }
 .button-stop:hover {
   background: #ff735c;
@@ -1093,7 +1105,7 @@ a.link-underlined.color-blue-light:after {
 }
 .button-attention {
   background: #ffc000;
-  color: #fff;
+  color: #fff !important;
 }
 .button-attention:hover {
   background: #ffcf0f;
@@ -1103,7 +1115,7 @@ a.link-underlined.color-blue-light:after {
 }
 .button-action {
   background: #0ea2bb;
-  color: #fff;
+  color: #fff !important;
 }
 .button-action:hover {
   background: #1db1ca;

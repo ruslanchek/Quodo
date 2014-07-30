@@ -121,6 +121,31 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compress');
 
-    grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'less:dist_compressed', 'copy:dist_js', 'copy:dist_index', 'compress']);
+    grunt.registerTask('default', [
+        'clean:main_full',
+        'less:dev',
+        'ejs',
+        'copy:html',
+        'copy:js',
+        'copy:prettify',
+        'clean:main',
+        'watch'
+    ]);
+
+    grunt.registerTask('production', [
+        'clean:main_full',
+        'less:dev',
+        'ejs',
+        'copy:html',
+        'copy:js',
+        'copy:prettify',
+        'clean:main',
+
+        'clean:dist',
+        'less:dist',
+        'less:dist_compressed',
+        'copy:dist_js',
+        'copy:dist_index',
+        'compress'
+    ]);
 };
