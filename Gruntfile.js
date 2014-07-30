@@ -6,6 +6,8 @@ module.exports = function(grunt) {
                     paths: ['less'],
                     sourceMap: true,
                     sourceMapFilename: 'public/css/quodo.map',
+                    sourceMapURL: 'quodo.map',
+                    outputSourceFiles: true,
                     compress: false
                 },
                 files: {
@@ -15,7 +17,11 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     paths: ['less'],
-                    sourceMap: false
+                    sourceMap: true,
+                    sourceMapFilename: 'dist/css/quodo.css.map',
+                    sourceMapURL: 'quodo.css.map',
+                    outputSourceFiles: true,
+                    compress: true
                 },
                 files: {
                     'dist/css/quodo.css': 'assets/less/quodo.less'
@@ -25,7 +31,9 @@ module.exports = function(grunt) {
                 options: {
                     paths: ['less'],
                     sourceMap: true,
-                    sourceMapFilename: 'dist/css/quodo.map',
+                    sourceMapFilename: 'dist/css/quodo.min.css.map',
+                    sourceMapURL: 'quodo.css.min.map',
+                    outputSourceFiles: true,
                     compress: true
                 },
                 files: {
@@ -50,14 +58,6 @@ module.exports = function(grunt) {
                 dest: './public'
             },
 
-            less: {
-                src: './assets/less/*',
-                filter: 'isFile',
-                expand: true,
-                flatten: true,
-                dest: './public/less'
-            },
-
             js: {
                 src: './assets/js/*',
                 filter: 'isFile',
@@ -80,22 +80,6 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './dist/js'
-            },
-
-            dist_css: {
-                src: ['./public/css/*'],
-                filter: 'isFile',
-                expand: true,
-                flatten: true,
-                dest: './dist/css'
-            },
-
-            dist_less: {
-                src: ['./assets/less/*', '!./assets/less/demo.less'],
-                filter: 'isFile',
-                expand: true,
-                flatten: true,
-                dest: './dist/less'
             },
 
             dist_index: {
@@ -126,6 +110,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:less', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
-    grunt.registerTask('dist', ['less:dist', 'less:dist_compressed', 'clean:dist', 'copy:dist_js', 'copy:dist_css', 'copy:dist_less', 'copy:dist_index']);
+    grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'less:dist_compressed', 'copy:dist_js', 'copy:dist_index']);
 };
