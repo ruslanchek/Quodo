@@ -96,6 +96,12 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './dist/less'
+            },
+
+            dist_index: {
+                src: ['./assets/index.html'],
+                filter: 'isFile',
+                dest: './dist/index.html'
             }
         },
         clean: {
@@ -121,5 +127,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:less', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
-    grunt.registerTask('dist', ['less:dist', 'less:dist_compressed', 'clean:dist', 'copy:dist_js', 'copy:dist_css', 'copy:dist_less']);
+    grunt.registerTask('dist', ['less:dist', 'less:dist_compressed', 'clean:dist', 'copy:dist_js', 'copy:dist_css', 'copy:dist_less', 'copy:dist_index']);
 };
