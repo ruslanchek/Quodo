@@ -98,7 +98,17 @@ module.exports = function(grunt) {
                 livereload: true
             },
             files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
-            tasks: ['less:dev', 'ejs', 'copy:less', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
+            tasks: ['less:dev', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: 'public/quodo.zip'
+                },
+                files: [
+                    {cwd: 'dist/', src: ['**'], expand: true}
+                ]
+            }
         }
     });
 
@@ -109,7 +119,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
     grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'less:dist_compressed', 'copy:dist_js', 'copy:dist_index']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'less:dist_compressed', 'copy:dist_js', 'copy:dist_index', 'compress']);
 };
