@@ -1,12 +1,35 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         less: {
-            development: {
+            dev: {
                 options: {
-                    paths: ['less']
+                    paths: ['less'],
+                    sourceMap: true,
+                    sourceMapFilename: 'public/css/quodo.map',
+                    compress: false
                 },
                 files: {
                     'public/css/quodo.css': 'assets/less/quodo.less'
+                }
+            },
+            dist: {
+                options: {
+                    paths: ['less'],
+                    sourceMap: false
+                },
+                files: {
+                    'dist/css/quodo.css': 'assets/less/quodo.less'
+                }
+            },
+            dist_compressed: {
+                options: {
+                    paths: ['less'],
+                    sourceMap: true,
+                    sourceMapFilename: 'dist/css/quodo.map',
+                    compress: true
+                },
+                files: {
+                    'dist/css/quodo.min.css': 'assets/less/quodo.less'
                 }
             }
         },
@@ -25,6 +48,14 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './public'
+            },
+
+            less: {
+                src: './assets/less/*',
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './public/less'
             },
 
             js: {
@@ -77,17 +108,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
-            tasks: ['less', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
-        },
-        connect: {
-            server: {
-                options: {
-                    port: 8000,
-                    hostname: '*',
-                    base: 'public',
-                    livereload: true
-                }
-            }
+            tasks: ['less:dev', 'ejs', 'copy:less', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
         }
     });
 
@@ -98,8 +119,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['clean:main_full', 'less', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
-    grunt.registerTask('dist', ['clean:dist', 'copy:dist_js', 'copy:dist_css', 'copy:dist_less']);
+    grunt.registerTask('default', ['clean:main_full', 'less:dev', 'ejs', 'copy:html', 'copy:less', 'copy:js', 'copy:prettify', 'clean:main', 'watch']);
+    grunt.registerTask('dist', ['less:dist', 'less:dist_compressed', 'clean:dist', 'copy:dist_js', 'copy:dist_css', 'copy:dist_less']);
 };

@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+
+@grid-span-height: 40px;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'PT Sans', sans-serif;
+  min-width: 1100px;
+
+  @media only screen and (max-width : @viewport-min-width) {
+    min-width: @viewport-min-width - 40;
+  }
+}
+
+
+
+.wrapper {
+  max-width: 1100px;
+}
+
+.content {
+  margin: 0 20px;
+  min-width: 900px;
+
+  @media only screen and (max-width : @viewport-min-width) {
+    min-width: @viewport-min-width - 40;
+  }
+}
+
+.demo {
+  height: 100%;
+
+  code {
+    display: none;
+  }
+
+  .code-show {
+    a {
+      font-size: 11px;
+      font-family: Arial;
+      font-weight: normal;
+      background: #EDEFF0;
+      padding: 0px 14px;
+      display: inline-block;
+      color: @base-text-color + 45;
+      text-decoration: none;
+      .border-radius;
+    }
+
+    margin-bottom: -2px;
+  }
+
+  .viewport {
+
+  }
+
+  .index-links {
+    text-align:  center;
+
+    a {
+      display: inline-block;
+      margin: 0 1.35ex;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+  }
+
+  @media only screen and (max-width : @viewport-min-width) {
+    margin-right: 0;
+    height: auto;
+
+    .viewport {
+      margin-left: 0;
+    }
+  }
+
+  .grid-sample {
+    div div {
+      background: #B3D3DD;
+      color: #505961;
+      text-align: center;
+      line-height: @grid-span-height;
+      height: @grid-span-height;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .border-radius(@base-border-radius);
+      .box-sizing(border-box);
+    }
+  }
+
+  .colors-blocks {
+    .item {
+      .border-radius(@base-border-radius);
+      height: 100px;
+      width: 100%;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .item-color {
+      border: 1px solid #eee;
+    }
+
+    .item-bg {
+      color: #fff;
+    }
+  }
+}
