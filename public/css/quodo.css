@@ -1267,9 +1267,6 @@ label {
   font-size: 0.9em;
   color: #828b93;
 }
-body {
-  -webkit-backface-visibility: hidden;
-}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
