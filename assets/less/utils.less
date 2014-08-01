@@ -1,7 +1,24 @@
+// Text
 .uppercase {
   text-transform: uppercase;
 }
 
+
+// Fonts
+.font-thin {
+  font-weight: 100;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+// Borders
 .no-border {
   border: none;
 }
@@ -10,6 +27,8 @@
   border-color: transparent;
 }
 
+
+// Rounded
 .rounded {
   .border-radius(@base-border-radius);
 }
@@ -18,6 +37,8 @@
   .border-radius(@base-border-radius * 2);
 }
 
+
+// Opacity
 .opacity-25 {
   opacity: 0.75;
 }
@@ -32,4 +53,14 @@
 
 .opacity-100 {
   opacity: 0;
+}
+
+
+// 3D
+.beveled {
+  .box-shadow (inset 0 -2px 0 rgba(0, 0, 0, 0.15));
+}
+
+.embossed {
+  .box-shadow (inset 0 2px 0 rgba(0, 0, 0, 0.15));
 }

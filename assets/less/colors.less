@@ -86,27 +86,18 @@
   background-color: @color-blue-light;
 }
 
-.colored-link (@color) {
-  &.@{color} {
-    color: @{color};
-
-    &:after {
-      border-bottom-color: @{color};
-    }
-
-    &:hover {
-      border-bottom-color: @{color} + 25;
-
-      &:after {
-        border-bottom-color: @{color} + 25;
-      }
-    }
-  }
-}
-
 a,
 a.link-dashed,
 a.link-underlined {
-  .colored-link ('color-grey-light');
-  .colored-link ('color-grey');
+  .colored-link (color-grey-light, @color-grey-light);
+  .colored-link (color-grey, @color-grey);
+  .colored-link (color-grey-dark, @color-grey-dark);
+  .colored-link (color-green, @color-green);
+  .colored-link (color-green-light, @color-green-light);
+  .colored-link (color-red, @color-red);
+  .colored-link (color-red-light, @color-red-light);
+  .colored-link (color-yellow, @color-yellow);
+  .colored-link (color-yellow-light, @color-yellow-light);
+  .colored-link (color-blue, @color-blue);
+  .colored-link (color-blue-light, @color-blue-light);
 }
