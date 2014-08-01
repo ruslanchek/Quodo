@@ -351,6 +351,21 @@ audio {
   float: left;
   margin-left: 3%;
 }
+.grid-12 .span-1.center,
+.grid-12 .span-2.center,
+.grid-12 .span-3.center,
+.grid-12 .span-4.center,
+.grid-12 .span-5.center,
+.grid-12 .span-6.center,
+.grid-12 .span-7.center,
+.grid-12 .span-8.center,
+.grid-12 .span-9.center,
+.grid-12 .span-10.center,
+.grid-12 .span-11.center,
+.grid-12 .span-12.center {
+  margin: 0 auto;
+  float: none;
+}
 .grid-10 {
   margin-left: -3%;
 }
@@ -406,6 +421,19 @@ audio {
 .grid-10 .span-10 {
   float: left;
   margin-left: 3%;
+}
+.grid-10 .span-1.center,
+.grid-10 .span-2.center,
+.grid-10 .span-3.center,
+.grid-10 .span-4.center,
+.grid-10 .span-5.center,
+.grid-10 .span-6.center,
+.grid-10 .span-7.center,
+.grid-10 .span-8.center,
+.grid-10 .span-9.center,
+.grid-10 .span-10.center {
+  margin: 0 auto;
+  float: none;
 }
 .hero-header {
   font-size: 5em;
