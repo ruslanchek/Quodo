@@ -677,6 +677,12 @@ a.link-underlined:hover:after {
 a.link-underlined:active:after {
   border-bottom-color: #f0644d;
 }
+.white-links a {
+  color: #ffffff;
+}
+.white-links a:hover {
+  color: #d7d7d7;
+}
 .table {
   margin-bottom: 1.5em;
   table-layout: fixed;
@@ -949,17 +955,17 @@ a.link-underlined:active:after {
   margin-top: 40px;
   padding: 1.5em;
 }
-.footer.light {
+.footer.footer-light {
   background-color: #dddfe0;
 }
-.footer.dark {
+.footer.footer-dark {
   background-color: #616970;
   color: #b4bdc5;
 }
-.footer.dark a {
+.footer.footer-dark a {
   color: #ffffff;
 }
-.footer.dark a:hover {
+.footer.footer-dark a:hover {
   color: #d7d7d7;
 }
 .button {
@@ -1484,15 +1490,21 @@ a.link-underlined.color-blue-light:hover:after {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.topic-bordered {
+.topic.topic-bordered {
   border-color: #dddfe0;
 }
-.topic-light {
+.topic.topic-light {
   background: #dddfe0;
 }
-.topic-dark {
+.topic.topic-dark {
   background: #616970;
   color: #fff;
+}
+.topic.topic-dark a {
+  color: #ffffff;
+}
+.topic.topic-dark a:hover {
+  color: #d7d7d7;
 }
 .section .section-thumb {
   float: left;

@@ -4,19 +4,21 @@
   border: 1px solid transparent;
   margin-bottom: 3.5ex;
   .border-radius(@base-border-radius);
-}
 
-.topic-bordered {
-  border-color: @elements-border-color;
-}
+  &.topic-bordered {
+    border-color: @elements-border-color;
+  }
 
-.topic-light {
-  background: @panel-color-light;
-}
+  &.topic-light {
+    background: @panel-color-light;
+  }
 
-.topic-dark {
-  background: @panel-color-dark;
-  color: #fff;
+  &.topic-dark {
+    background: @panel-color-dark;
+    color: #fff;
+
+    .white-links;
+  }
 }
 
 
