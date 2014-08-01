@@ -99,6 +99,11 @@ body {
     }
   }
 
+  .animation-test {
+    .user-select(none);
+    cursor: pointer;
+  }
+
   .colors-blocks {
     .item {
       .border-radius(@base-border-radius);
@@ -115,6 +120,17 @@ body {
 
     .item-bg {
       color: #fff;
+    }
+
+    .item-color {
+      &.background-grey-dark {
+        border: none;
+      }
+    }
+
+    .background-white {
+      color: @color-grey-dark;
+      border: 1px solid #eee;
     }
   }
 }

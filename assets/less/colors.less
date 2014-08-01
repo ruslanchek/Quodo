@@ -1,3 +1,7 @@
+.color-white {
+  color: @color-white;
+}
+
 .color-grey-light {
   color: @color-grey-light;
 }
@@ -40,6 +44,12 @@
 
 .color-blue-light {
   color: @color-blue-light;
+}
+
+
+
+.background-white {
+  background-color: @color-white;
 }
 
 .background-grey-light {
@@ -89,6 +99,22 @@
 a,
 a.link-dashed,
 a.link-underlined {
+  &.color-white {
+    color: @color-white;
+
+    &:after {
+      border-bottom-color: @color-white;
+    }
+
+    &:hover {
+      color: @color-white - 40;
+
+      &:after {
+        border-bottom-color: @color-white - 40;
+      }
+    }
+  }
+
   .colored-link (color-grey-light, @color-grey-light);
   .colored-link (color-grey, @color-grey);
   .colored-link (color-grey-dark, @color-grey-dark);

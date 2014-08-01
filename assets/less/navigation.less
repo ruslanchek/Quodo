@@ -200,3 +200,26 @@
     font-size: 1.5em;
   }
 }
+
+
+.footer {
+  margin-top: 40px;
+  padding: 1.5em;
+
+  &.light {
+    background-color: @panel-color-light;
+  }
+
+  &.dark {
+    background-color: @panel-color-dark;
+    color: @color-grey-light;
+
+    a {
+      color: @color-white;
+
+      &:hover {
+        color: @color-white - 40;
+      }
+    }
+  }
+}
