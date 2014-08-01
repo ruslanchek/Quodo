@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'public/css/quodo.css': 'assets/less/quodo.less'
+                    'public/css/quodo.css': 'assets/less/demo.less'
                 }
             },
             dist: {
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'dist/css/quodo.css': 'assets/less/quodo.less'
+                    'dist/css/quodo.css': 'assets/less/project.less'
                 }
             },
             dist_compressed: {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'dist/css/quodo.min.css': 'assets/less/quodo.less'
+                    'dist/css/quodo.min.css': 'assets/less/project.less'
                 }
             }
         },
@@ -80,6 +80,22 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 dest: './dist/js'
+            },
+
+            dist_less: {
+                src: ['./assets/less/*', '!./assets/less/demo.less'],
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/less'
+            },
+
+            dist_css: {
+                src: ['./assets/css/project.css'],
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/css'
             },
 
             dist_index: {
@@ -145,6 +161,8 @@ module.exports = function(grunt) {
         'less:dist',
         'less:dist_compressed',
         'copy:dist_js',
+        'copy:dist_less',
+        'copy:dist_css',
         'copy:dist_index',
         'compress'
     ]);
