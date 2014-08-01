@@ -37,8 +37,8 @@
 <a class="" href="utils.html">Utils</a>
 <a class="" href="links.html">Links</a>
 <a class="" href="alerts.html">Alerts</a>
-<a class="" href="breadcrumbs.html">Breadcrumbs</a>
 <a class="" href="misc.html">Misc</a>
+<a class="" href="animation.html">Animation</a>
 <a class="" href="less-mixins.html">LESS Mixins</a>
 </nav>
 		            </div>
@@ -49,34 +49,74 @@
 
 
 <!-- VIEWPORT -->
-<h2>Colors and backgrounds</h2>
-
 <div class="grid-12">
-    <div class="span-6">
+    <div class="span-4">
+        <h3>Text colors</h3>
+
         <div class="colors-blocks">
             <div class="item item-color color-blue">.color-blue</div>
             <div class="item item-color color-blue-light">.color-blue-light</div>
             <div class="item item-color color-green">.color-green</div>
+            <div class="item item-color color-green-light">.color-green-light</div>
             <div class="item item-color color-red">.color-red</div>
+            <div class="item item-color color-red-light">.color-red-light</div>
             <div class="item item-color color-yellow">.color-yellow</div>
             <div class="item item-color color-yellow-light">.color-yellow-light</div>
             <div class="item item-color color-grey-light">.color-grey-light</div>
             <div class="item item-color color-grey">.color-grey</div>
             <div class="item item-color color-grey-dark">.color-grey-dark</div>
+            <div class="item item-color color-white background-grey-dark">.color-white</div>
         </div>
+
+<code><pre class="prettyprint">
+&lt;span class="color-red"&gt;...&lt;/a&gt;
+</pre></code>
     </div>
-    <div class="span-6">
+
+    <div class="span-4">
+        <h3>Link colors</h3>
+
+        <div class="colors-blocks">
+            <div class="item item-color"><a class="color-blue" href="#">.color-blue</a></div>
+            <div class="item item-color color-blue-light"><a class="color-blue-light" href="#">.color-blue-light</a></div>
+            <div class="item item-color color-green"><a class="color-green" href="#">.color-green</a></div>
+            <div class="item item-color color-green-light"><a class="color-green-light" href="#">.color-green-light</a></div>
+            <div class="item item-color color-red"><a class="color-red" href="#">.color-red</a></div>
+            <div class="item item-color color-red-light"><a class="color-red-light" href="#">.color-red-light</a></div>
+            <div class="item item-color color-yellow"><a class="color-yellow" href="#">.color-yellow</a></div>
+            <div class="item item-color color-yellow-light"><a class="color-yellow-light" href="#">.color-yellow-light</a></div>
+            <div class="item item-color color-grey-light"><a class="color-grey-light" href="#">.color-grey-light</a></div>
+            <div class="item item-color color-grey"><a class="color-grey" href="#">.color-grey</a></div>
+            <div class="item item-color color-grey-dark"><a class="color-grey-dark" href="#">.color-grey-dark</a></div>
+            <div class="item item-color background-grey-dark"><a class="color-white" href="#">.color-white</a></div>
+        </div>
+
+<code><pre class="prettyprint">
+&lt;a class="color-red" href="#"&gt;...&lt;/a&gt;
+</pre></code>
+    </div>
+
+    <div class="span-4">
+        <h3>Background colors</h3>
+
         <div class="colors-blocks">
             <div class="item item-bg background-blue">.background-blue</div>
             <div class="item item-bg background-blue-light">.background-blue-light</div>
             <div class="item item-bg background-green">.background-green</div>
+            <div class="item item-bg background-green-light">.background-green-light</div>
             <div class="item item-bg background-red">.background-red</div>
+            <div class="item item-bg background-red-light">.background-red-light</div>
             <div class="item item-bg background-yellow">.background-yellow</div>
             <div class="item item-bg background-yellow-light">.background-yellow-light</div>
             <div class="item item-bg background-grey-light">.background-grey-light</div>
             <div class="item item-bg background-grey">.background-grey</div>
             <div class="item item-bg background-grey-dark">.background-grey-dark</div>
+            <div class="item item-bg background-white color-grey-dark">.background-white</div>
         </div>
+
+<code><pre class="prettyprint">
+&lt;div class="background-red"&gt;...&lt;/div&gt;
+</pre></code>
     </div>
 </div>
 <!-- /VIEWPORT -->   
@@ -86,7 +126,13 @@
                 </div>
             </div>
         </div>
-        
+        <footer class="footer dark">
+    <div class="wrapper">
+        <div class="content">
+            Text <a href="#">Link</a>
+        </div>
+    </div>
+</footer>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="prettify/prettify.js"></script>
 <script type="text/javascript" src="js/demo.js"></script>

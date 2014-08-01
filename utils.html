@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>LESS Mixins &mdash; Quodo LESS-Framework</title>
+    <title>Utils &mdash; Quodo LESS-Framework</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale = 1.0, minimum-scale=1.0 maximum-scale = 1.0" />
@@ -34,48 +34,54 @@
 <a class="" href="navigation.html">Navigation</a>
 <a class="" href="labels.html">Labels</a>
 <a class="" href="colors.html">Colors</a>
-<a class="" href="utils.html">Utils</a>
+<a class="active" href="utils.html">Utils</a>
 <a class="" href="links.html">Links</a>
 <a class="" href="alerts.html">Alerts</a>
 <a class="" href="misc.html">Misc</a>
 <a class="" href="animation.html">Animation</a>
-<a class="active" href="less-mixins.html">LESS Mixins</a>
+<a class="" href="less-mixins.html">LESS Mixins</a>
 </nav>
 		            </div>
 		            <div class="span-9">
 		                <div class="viewport">
-                            <h1 class="font-thin">LESS Mixins</h1>
+                            <h1 class="font-thin">Utils</h1>
                             <hr/>
 
 
 <!-- VIEWPORT -->
-<code>.text-shadow (@string)</code>
+<h2>Simple utils</h2>
 
-<code>.box-shadow (@shadow)</code>
+<h3>Text</h3>
+<samp>.uppercase</samp>
+<samp>.font-thin</samp>
+<samp>.text-right</samp>
+<samp>.text-center</samp>
 
-<code>.box-shadow-multi (@shadow, ...)</code>
+<br/><br/>
 
-<code>.box-sizing (@type: border-box)</code>
 
-<code>.border-radius (@radius: 5px)</code>
+<h3>Borders</h3>
+<samp>.no-border</samp>
+<samp>.border-transparent</samp>
+<br/><br/>
 
-<code>.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0)</code>
 
-<code>.opacity (@opacity: 0.5)</code>
+<h3>Effect</h3>
+<samp>.rounded</samp>
+<samp>.rounded-2x</samp>
+<br/><br/>
 
-<code>.gradient (@startColor: #eee, @endColor: white)</code>
 
-<code>.horizontal-gradient (@startColor: #eee, @endColor: white)</code>
+<h3>Opacity</h3>
+<samp>.opacity-25</samp>
+<samp>.opacity-50</samp>
+<samp>.opacity-75</samp>
+<samp>.opacity-100</samp>
+<br/><br/>
 
-<code>.clearfix ()</code>
-
-<code>.font-face (@family: arial, @url, @weight: normal, @style: normal)</code>
-
-<code>.translucent-background (@var-color, @var-alpha)</code>
-
-<code>.translucent-color (@var-color, @var-alpha)</code>
-
-<code>.translucent-border-color (@var-color, @var-alpha)</code>
+<h2>Block utils</h2>
+<div class="alert beveled text-center">.beveled</div>
+<div class="alert embossed text-center">.embossed</div>
 <!-- /VIEWPORT -->
 
                         </div>
