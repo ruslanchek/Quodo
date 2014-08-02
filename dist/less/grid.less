@@ -1,0 +1,147 @@
+.grid-12 {
+  @grid-width: 100%;
+  @gutter-width: 3%;
+  @span-width: (@grid-width / 12);
+
+  margin-left: -@gutter-width;
+
+  .clearfix();
+
+  .span-1 {
+    width: @span-width * 1 - @gutter-width;
+  }
+
+  .span-2 {
+    width: @span-width * 2 - @gutter-width;
+  }
+
+  .span-3 {
+    width: @span-width * 3 - @gutter-width;
+  }
+
+  .span-4 {
+    width: @span-width * 4 - @gutter-width;
+  }
+
+  .span-5 {
+    width: @span-width * 5 - @gutter-width;
+  }
+
+  .span-6 {
+    width: @span-width * 6 - @gutter-width;
+  }
+
+  .span-7 {
+    width: @span-width * 7 - @gutter-width;
+  }
+
+  .span-8 {
+    width: @span-width * 8 - @gutter-width;
+  }
+
+  .span-9 {
+    width: @span-width * 9 - @gutter-width;
+  }
+
+  .span-10 {
+    width: @span-width * 10 - @gutter-width;
+  }
+
+  .span-11 {
+    width: @span-width * 11 - @gutter-width;
+  }
+
+  .span-12 {
+    width: @span-width * 12 - @gutter-width;
+  }
+
+  .span-1,
+  .span-2,
+  .span-3,
+  .span-4,
+  .span-5,
+  .span-6,
+  .span-7,
+  .span-8,
+  .span-9,
+  .span-10,
+  .span-11,
+  .span-12 {
+    float: left;
+    margin-left: @gutter-width;
+
+    &.center {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+}
+
+.grid-10 {
+  @grid-width: 100%;
+  @gutter-width: 3%;
+  @span-width: (@grid-width / 10);
+
+  margin-left: -@gutter-width;
+
+  .clearfix();
+
+  .span-1 {
+    width: @span-width * 1 - @gutter-width;
+  }
+
+  .span-2 {
+    width: @span-width * 2 - @gutter-width;
+  }
+
+  .span-3 {
+    width: @span-width * 3 - @gutter-width;
+  }
+
+  .span-4 {
+    width: @span-width * 4 - @gutter-width;
+  }
+
+  .span-5 {
+    width: @span-width * 5 - @gutter-width;
+  }
+
+  .span-6 {
+    width: @span-width * 6 - @gutter-width;
+  }
+
+  .span-7 {
+    width: @span-width * 7 - @gutter-width;
+  }
+
+  .span-8 {
+    width: @span-width * 8 - @gutter-width;
+  }
+
+  .span-9 {
+    width: @span-width * 9 - @gutter-width;
+  }
+
+  .span-10 {
+    width: @span-width * 10 - @gutter-width;
+  }
+
+  .span-1,
+  .span-2,
+  .span-3,
+  .span-4,
+  .span-5,
+  .span-6,
+  .span-7,
+  .span-8,
+  .span-9,
+  .span-10 {
+    float: left;
+    margin-left: @gutter-width;
+
+    &.center {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+}

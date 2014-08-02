@@ -1,0 +1,49 @@
+// Topics
+.topic {
+  padding: 1.5em @base-side-padding;
+  border: 1px solid transparent;
+  margin-bottom: 3.5ex;
+  .border-radius(@base-border-radius);
+
+  &.topic-bordered {
+    border-color: @elements-border-color;
+  }
+
+  &.topic-light {
+    background: @panel-color-light;
+  }
+
+  &.topic-dark {
+    background: @panel-color-dark;
+    color: #fff;
+
+    .white-links;
+  }
+}
+
+
+// Sections
+.section {
+  .section-thumb {
+    float: left;
+    margin-right: 2.5ex;
+    margin-top: 0.35em;
+  }
+
+  .section-body {
+    overflow: hidden;
+    zoom: 1;
+
+    > p.date {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+
+// Date
+.date {
+  font-size: 0.9em;
+  color: @color-grey-light;
+}

@@ -1,0 +1,129 @@
+.color-white {
+  color: @color-white;
+}
+
+.color-grey-light {
+  color: @color-grey-light;
+}
+
+.color-grey {
+  color: @color-grey;
+}
+
+.color-grey-dark {
+  color: @color-grey-dark;
+}
+
+.color-green {
+  color: @color-green;
+}
+
+.color-green-light {
+  color: @color-green-light;
+}
+
+.color-red {
+  color: @color-red;
+}
+
+.color-red-light {
+  color: @color-red-light;
+}
+
+.color-yellow {
+  color: @color-yellow;
+}
+
+.color-yellow-light {
+  color: @color-yellow-light;
+}
+
+.color-blue {
+  color: @color-blue;
+}
+
+.color-blue-light {
+  color: @color-blue-light;
+}
+
+
+
+.background-white {
+  background-color: @color-white;
+}
+
+.background-grey-light {
+  background-color: @color-grey-light;
+}
+
+.background-grey {
+  background-color: @color-grey;
+}
+
+.background-grey-dark {
+  background-color: @color-grey-dark;
+}
+
+.background-green {
+  background-color: @color-green;
+}
+
+.background-green-light {
+  background-color: @color-green-light;
+}
+
+.background-red {
+  background-color: @color-red;
+}
+
+.background-red-light {
+  background-color: @color-red-light;
+}
+
+.background-yellow {
+  background-color: @color-yellow;
+}
+
+.background-yellow-light {
+  background-color: @color-yellow-light;
+}
+
+.background-blue {
+  background-color: @color-blue;
+}
+
+.background-blue-light {
+  background-color: @color-blue-light;
+}
+
+a,
+a.link-dashed,
+a.link-underlined {
+  &.color-white {
+    color: @color-white;
+
+    &:after {
+      border-bottom-color: @color-white;
+    }
+
+    &:hover {
+      color: @color-white - 40;
+
+      &:after {
+        border-bottom-color: @color-white - 40;
+      }
+    }
+  }
+
+  .colored-link (color-grey-light, @color-grey-light);
+  .colored-link (color-grey, @color-grey);
+  .colored-link (color-grey-dark, @color-grey-dark);
+  .colored-link (color-green, @color-green);
+  .colored-link (color-green-light, @color-green-light);
+  .colored-link (color-red, @color-red);
+  .colored-link (color-red-light, @color-red-light);
+  .colored-link (color-yellow, @color-yellow);
+  .colored-link (color-yellow-light, @color-yellow-light);
+  .colored-link (color-blue, @color-blue);
+  .colored-link (color-blue-light, @color-blue-light);
+}

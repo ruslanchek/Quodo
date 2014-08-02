@@ -1,0 +1,93 @@
+a {
+  &:link {
+    color: @base-link-color;
+  }
+
+  &:visited {
+    color: @base-link-visited-color;
+  }
+
+  &:hover {
+    color: @base-link-hover-color;
+  }
+
+  &:active {
+    color: @base-link-active-color;
+  }
+}
+
+
+a.link-dashed {
+  text-decoration: none;
+  position: relative;
+
+  &:after {
+    border-bottom: 1px dashed @base-link-color;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.075em;
+    height: 0;
+    width: 100%;
+    opacity: 0.55;
+  }
+
+  &:link:after {
+    border-bottom-color: @base-link-color;
+  }
+
+  &:visited:after {
+    border-bottom-color: @base-link-visited-color;
+  }
+
+  &:hover:after {
+    border-bottom-color: @base-link-hover-color;
+  }
+
+  &:active:after {
+    border-bottom-color: @base-link-active-color;
+  }
+}
+
+
+a.link-underlined {
+  text-decoration: none;
+  position: relative;
+
+  &:after {
+    border-bottom: 1px solid @base-link-color;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.075em;
+    height: 0;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  &:link:after {
+    border-bottom-color: @base-link-color;
+  }
+
+  &:visited:after {
+    border-bottom-color: @base-link-visited-color;
+  }
+
+  &:hover:after {
+    border-bottom-color: @base-link-hover-color;
+  }
+
+  &:active:after {
+    border-bottom-color: @base-link-active-color;
+  }
+}
+
+.white-links {
+  a {
+    color: @color-white;
+
+    &:hover {
+      color: @color-white - 40;
+    }
+  }
+}
