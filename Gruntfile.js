@@ -49,6 +49,17 @@ module.exports = function(grunt) {
                 ext: '.html'
             }
         },
+        concat: {
+            options: {
+                separator: ''
+            },
+            dist: {
+                src: [
+                    'assets/js/quodo.animate.js'
+                ],
+                dest: 'assets/js/quodo.js'
+            }
+        },
         copy: {
             html: {
                 src: './public/pages/*',
@@ -126,7 +137,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
-            tasks: ['less:dev', 'ejs', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
+            tasks: ['less:dev', 'ejs', 'concat:dist', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
         },
         compress: {
             main: {
@@ -154,6 +165,7 @@ module.exports = function(grunt) {
         'clean:main_full',
         'less:dev',
         'ejs',
+        'concat:dist',
         'copy:html',
         'copy:js',
         'copy:prettify',
@@ -165,6 +177,7 @@ module.exports = function(grunt) {
         'clean:main_full',
         'less:dev',
         'ejs',
+        'concat:dist',
         'copy:html',
         'copy:js',
         'copy:prettify',
