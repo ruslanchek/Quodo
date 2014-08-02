@@ -15,15 +15,7 @@ var Code = function(){
 
         $('.animation-test').on('dblclick', function(e){
             e.preventDefault();
-
-            var $this = $(this),
-                animate_class = $(this).data('animation');
-
-            $this.addClass(animate_class);
-
-            setTimeout(function(){
-                $this.removeClass(animate_class);
-            }, parseInt($this.css('animation-duration')) * 1000);
+            $(this).QAnimate($(this).data('animation'));
         });
     };
 };

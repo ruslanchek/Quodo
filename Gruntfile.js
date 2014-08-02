@@ -109,6 +109,18 @@ module.exports = function(grunt) {
             main: ['public/pages'],
             dist: ['dist']
         },
+        uglify: {
+            my_target: {
+                options: {
+                    sourceMap: true,
+                    compress: true,
+                    sourceMapName: 'dist/js/quodo.min.js.map'
+                },
+                files: {
+                    'dist/js/quodo.min.js': ['dist/js/quodo.js']
+                }
+            }
+        },
         watch: {
             options: {
                 livereload: true
@@ -136,6 +148,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', [
         'clean:main_full',
@@ -164,6 +177,7 @@ module.exports = function(grunt) {
         'copy:dist_less',
         'copy:dist_css',
         'copy:dist_index',
+        'uglify',
         'compress'
     ]);
 };
