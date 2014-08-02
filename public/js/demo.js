@@ -19,11 +19,6 @@ var Demo = function(){
             e.preventDefault();
             $(this).QAnimate($(this).data('animation'));
         });
-
-        $('.icon-demo').on('click', function(e){
-            e.preventDefault();
-            $(this).QAnimate('tada');
-        });
     };
 
     this.init();
