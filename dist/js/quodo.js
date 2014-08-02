@@ -1,44 +1,46 @@
 (function ($) {
     $.fn.QAnimate = function (tween_name, opts) {
-        var options = {
-            beforeStart: function($object){
+        var animated = false,
+            options = {
+                ignore_animation: false,
+                beforeStart: function($target, tween_name){
 
-            },
-            complete: function($object){
+                },
+                complete: function($target, tween_name){
 
-            }
-        };
+                }
+            };
 
-        function getAnimationTime($object){
-            return parseInt($object.css('animation-duration')) * 1000;
+        function getAnimationTime($target){
+            return parseInt($target.css('animation-duration')) * 1000;
         }
 
-        function doAnimation(tween_name, $object){
-            e.preventDefault();
-
-            $object.addClass('animated ' + tween_name);
-            $object.data('QAnimate').animated = true;
-            $object.data('QAnimate').options.beforeStart($object);
+        function doAnimation(tween_name, $target){
+            $target.addClass('animated');
+            $target.data('QAnimate').options.beforeStart($target, tween_name);
 
             setTimeout(function(){
-                $object.removeClass('animated ' + tween_name);
-                $object.data('QAnimate').animated = false;
-                $object.data('QAnimate').options.complete($object);
-            }, getAnimationTime($object));
+                $target.addClass(tween_name);
+                animated = true;
+
+                setTimeout(function(){
+                    $target.removeClass('animated ' + tween_name);
+                    animated = false;
+                    $target.data('QAnimate').options.complete($target, tween_name);
+                }, getAnimationTime($target));
+            }, 10);
         }
 
         var methods = {
             init: function (tween_name, opts) {
                 return this.each(function () {
-                    var $this = $(this),
-                        data = $this.data('QAnimate');
+                    var $this = $(this);
 
-                    if (!data) {
-                        $this.data('QAnimate', {
-                            animated: false,
-                            options: $.extend(options, opts)
-                        });
+                    $this.data('QAnimate', {
+                        options: $.extend(options, opts)
+                    });
 
+                    if(!animated || $this.data('QAnimate').options.ignore_animation === true) {
                         doAnimation(tween_name, $this);
                     }
                 });
@@ -46,19 +48,11 @@
         };
 
         if(tween_name && !opts){
-            return methods.init.apply(tween_name, {});
+            return methods.init.apply(this, arguments);
         }else if(tween_name && opts){
-            return methods.init.apply(tween_name, opts);
+            return methods.init.apply(this, arguments);
         }else{
             $.error('QAnimate: first argument tween_name undefined!');
-        }
-
-        if (methods[method]) {
-            return methods[ method ].apply(this, Array.prototype.slice.call(arguments, 1));
-        } else if (typeof method === 'object' || !method) {
-            return methods.init.apply(this, arguments);
-        } else {
-            $.error('QAnimate: Invalid method!');
         }
     };
 })(jQuery);

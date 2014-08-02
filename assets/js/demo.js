@@ -1,5 +1,7 @@
-var Code = function(){
+var Demo = function(){
     this.init = function(){
+        prettyPrint();
+
         $('code').each(function(){
             var $code = $(this),
                 $btn = $('<div/>');
@@ -18,11 +20,10 @@ var Code = function(){
             $(this).QAnimate($(this).data('animation'));
         });
     };
+
+    this.init();
 };
 
 $(function(){
-    prettyPrint();
-
-    var code = new Code();
-    code.init();
+    var demo = new Demo();
 });

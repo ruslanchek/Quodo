@@ -1,5 +1,7 @@
-var Code = function(){
+var Demo = function(){
     this.init = function(){
+        prettyPrint();
+
         $('code').each(function(){
             var $code = $(this),
                 $btn = $('<div/>');
@@ -17,12 +19,16 @@ var Code = function(){
             e.preventDefault();
             $(this).QAnimate($(this).data('animation'));
         });
+
+        $('.icon-demo').on('click', function(e){
+            e.preventDefault();
+            $(this).QAnimate('tada');
+        });
     };
+
+    this.init();
 };
 
 $(function(){
-    prettyPrint();
-
-    var code = new Code();
-    code.init();
+    var demo = new Demo();
 });

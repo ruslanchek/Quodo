@@ -77,12 +77,28 @@ module.exports = function(grunt) {
                 dest: './public/js'
             },
 
+            fonts: {
+                src: './assets/fonts/icons/*',
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './public/fonts/icons/'
+            },
+
             prettify: {
                 src: './assets/prettify/*',
                 filter: 'isFile',
                 expand: true,
                 flatten: true,
                 dest: './public/prettify'
+            },
+
+            dist_fonts: {
+                src: './assets/fonts/icons/*',
+                filter: 'isFile',
+                expand: true,
+                flatten: true,
+                dest: './dist/fonts/icons/'
             },
 
             dist_js: {
@@ -137,7 +153,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js', '!assets/js/quodo.js'],
-            tasks: ['less:dev', 'ejs', 'concat:dist', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
+            tasks: ['less:dev', 'ejs', 'concat:dist', 'copy:fonts', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
         },
         compress: {
             main: {
@@ -166,6 +182,7 @@ module.exports = function(grunt) {
         'less:dev',
         'ejs',
         'concat:dist',
+        'copy:fonts',
         'copy:html',
         'copy:js',
         'copy:prettify',
@@ -178,6 +195,7 @@ module.exports = function(grunt) {
         'less:dev',
         'ejs',
         'concat:dist',
+        'copy:fonts',
         'copy:html',
         'copy:js',
         'copy:prettify',
@@ -186,6 +204,7 @@ module.exports = function(grunt) {
         'clean:dist',
         'less:dist',
         'less:dist_compressed',
+        'copy:dist_fonts',
         'copy:dist_js',
         'copy:dist_less',
         'copy:dist_css',
