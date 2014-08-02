@@ -136,7 +136,7 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js'],
+            files: ['assets/js/*.js', 'assets/less/*.less', 'pages/*.ejs', 'include/*.ejs', 'Gruntfile.js', '!assets/js/quodo.js'],
             tasks: ['less:dev', 'ejs', 'concat:dist', 'copy:html', 'copy:js', 'copy:prettify', 'clean:main']
         },
         compress: {
