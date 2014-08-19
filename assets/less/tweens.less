@@ -18,51 +18,52 @@
 }
 
 
-@-webkit-keyframes rotation-endless {
+@-webkit-keyframes spin {
   from {
       -webkit-transform: rotate(0deg);
   }
 
   to {
-      -webkit-transform: rotate(360deg);
+      -webkit-transform: rotate(359deg);
   }
 }
 
-@-moz-keyframes rotation-endless {
+@-moz-keyframes spin {
   from {
       -moz-transform: rotate(0deg);
   }
 
   to {
-      -moz-transform: rotate(360deg);
+      -moz-transform: rotate(359deg);
   }
 }
 
-@-o-keyframes rotation-endless {
+@-o-keyframes spin {
   from {
     -o-transform: rotate(0deg);
   }
 
   to {
-    -o-transform: rotate(360deg);
+    -o-transform: rotate(359deg);
   }
 }
 
-@keyframes rotation-endless {
+@keyframes spin {
   from {
       transform: rotate(0deg);
   }
 
   to {
-      transform: rotate(360deg);
+      transform: rotate(359deg);
   }
 }
 
-.rotation-endless {
-  -webkit-animation: rotation-endless 1s linear infinite;
-  -moz-animation: rotation-endless 1s linear infinite;
-  -o-animation: rotation-endless 1s linear infinite;
-  animation: rotation-endless 1s linear infinite;
+.spin {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  display: inline-block;
 }
 
 @-webkit-keyframes pushing {

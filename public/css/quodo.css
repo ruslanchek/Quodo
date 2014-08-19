@@ -2,7 +2,7 @@
 body,
 th,
 td {
-  font-family: 'Scada', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   color: #505961;
   line-height: 1.55em;
@@ -1037,7 +1037,7 @@ a.link-underlined:active:after {
 .button {
   display: inline-block;
   vertical-align: top;
-  font-family: 'Scada', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -2015,43 +2015,44 @@ a.link-underlined.color-blue-light:hover:after {
   -o-animation-duration: 2000ms;
   animation-duration: 2000ms;
 }
-@-webkit-keyframes rotation-endless {
+@-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(359deg);
   }
 }
-@-moz-keyframes rotation-endless {
+@-moz-keyframes spin {
   from {
     -moz-transform: rotate(0deg);
   }
   to {
-    -moz-transform: rotate(360deg);
+    -moz-transform: rotate(359deg);
   }
 }
-@-o-keyframes rotation-endless {
+@-o-keyframes spin {
   from {
     -o-transform: rotate(0deg);
   }
   to {
-    -o-transform: rotate(360deg);
+    -o-transform: rotate(359deg);
   }
 }
-@keyframes rotation-endless {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
-.rotation-endless {
-  -webkit-animation: rotation-endless 1s linear infinite;
-  -moz-animation: rotation-endless 1s linear infinite;
-  -o-animation: rotation-endless 1s linear infinite;
-  animation: rotation-endless 1s linear infinite;
+.spin {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  display: inline-block;
 }
 @-webkit-keyframes pushing {
   0% {
@@ -5555,7 +5556,7 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.demo .icons-demo .icon-demo {
+.demo .icons-demo .font-icon-demo {
   width: 20%;
   float: left;
   text-align: center;
@@ -5567,16 +5568,17 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.demo .icons-demo .icon-demo:hover {
+.demo .icons-demo .font-icon-demo:hover {
   background: #eee;
 }
-.demo .icons-demo .icon-demo i {
+.demo .icons-demo .font-icon-demo i {
   font-size: 42px;
 }
-.demo .icons-demo .icon-demo span {
+.demo .icons-demo .font-icon-demo span {
   display: block;
   margin-top: 0.8em;
   white-space: nowrap;
+  font-family: "PT Sans", sans-serif;
 }
 .demo .index-links {
   text-align: center;
@@ -5592,7 +5594,7 @@ body {
     margin-right: 0;
     height: auto;
   }
-  .demo .icons-demo .icon-demo {
+  .demo .icons-demo .font-font-icon-demo {
     width: 50%;
   }
   .demo .viewport {
