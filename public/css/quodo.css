@@ -2053,6 +2053,56 @@ a.link-underlined.color-blue-light:hover:after {
   -o-animation: rotation-endless 1s linear infinite;
   animation: rotation-endless 1s linear infinite;
 }
+@-webkit-keyframes pushing {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes pushing {
+  0% {
+    -moz-transform: scale(1);
+  }
+  25% {
+    -moz-transform: scale(0.95);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes pushing {
+  0% {
+    -o-transform: scale(1);
+  }
+  25% {
+    -o-transform: scale(0.95);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@keyframes pushing {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pushing {
+  -webkit-animation-name: pushing;
+  -moz-animation-name: pushing;
+  -o-animation-name: pushing;
+  animation-name: pushing;
+}
 @-webkit-keyframes flash {
   0%,
   50%,
@@ -5518,9 +5568,6 @@ body {
   background-clip: padding-box;
 }
 .demo .icons-demo .icon-demo:hover {
-  background: #eee;
-}
-.demo .icons-demo .icon-demo:active {
   background: #eee;
 }
 .demo .icons-demo .icon-demo i {

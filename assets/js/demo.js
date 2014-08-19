@@ -19,6 +19,14 @@ var Demo = function(){
             e.preventDefault();
             $(this).QAnimate($(this).data('animation'));
         });
+
+        $('.icon-demo').on('click touchstart', function(e){
+            e.preventDefault();
+
+            $(this).QAnimate('pushing', {
+                duration: 300
+            });
+        });
     };
 
     this.init();

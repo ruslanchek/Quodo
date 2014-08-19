@@ -3,6 +3,7 @@
         var animated = false,
             options = {
                 ignore_animation: false,
+                duration: 1000,
                 beforeStart: function($target, tween_name){
 
                 },
@@ -11,13 +12,17 @@
                 }
             };
 
-        function getAnimationTime($target){
-            return parseInt($target.css('animation-duration')) * 1000;
-        }
-
         function doAnimation(tween_name, $target){
-            $target.addClass('animated');
-            $target.data('QAnimate').options.beforeStart($target, tween_name);
+            var o = $target.data('QAnimate').options;
+
+            $target.addClass('animated').css({
+                '-webkit-animation-duration'    : o.duration,
+                '-moz-animation-duration'       : o.duration,
+                '-o-animation-duration'         : o.duration,
+                'animation-duration'            : o.duration
+            });
+
+            o.beforeStart($target, tween_name);
 
             setTimeout(function(){
                 $target.addClass(tween_name);
@@ -26,8 +31,8 @@
                 setTimeout(function(){
                     $target.removeClass('animated ' + tween_name);
                     animated = false;
-                    $target.data('QAnimate').options.complete($target, tween_name);
-                }, getAnimationTime($target));
+                    o.complete($target, tween_name);
+                }, o.duration);
             }, 10);
         }
 

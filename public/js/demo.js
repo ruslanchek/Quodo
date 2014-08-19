@@ -15,9 +15,17 @@ var Demo = function(){
             });
         });
 
-        $('.animation-test').on('dblclick', function(e){
+        $('.animation-test').on('dblclick touchend', function(e){
             e.preventDefault();
             $(this).QAnimate($(this).data('animation'));
+        });
+
+        $('.icon-demo').on('click touchstart', function(e){
+            e.preventDefault();
+
+            $(this).QAnimate('pushing', {
+                duration: 300
+            });
         });
     };
 
