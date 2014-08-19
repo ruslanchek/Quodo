@@ -43,14 +43,18 @@ body {
 
   .icons-demo {
     .icon-demo {
-      .border-radius;
-
-      width: 25%;
+      width: 20%;
       float: left;
       text-align: center;
       padding: 1.4em 0 1.8em;
 
+      .border-radius;
+
       &:hover {
+        background: #eee;
+      }
+
+      &:active {
         background: #eee;
       }
 
@@ -61,6 +65,7 @@ body {
       span {
         display: block;
         margin-top: 0.8em;
+        white-space: nowrap;
       }
     }
   }
@@ -79,6 +84,12 @@ body {
   @media only screen and (max-width : @viewport-min-width) {
     margin-right: 0;
     height: auto;
+
+    .icons-demo {
+      .icon-demo {
+        width: 50%;
+      }
+    }
 
     .viewport {
       margin-left: 0;

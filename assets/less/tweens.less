@@ -17,6 +17,55 @@
 	        animation-duration: 2000ms;
 }
 
+
+@-webkit-keyframes rotation-endless {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotation-endless {
+  from {
+      -moz-transform: rotate(0deg);
+  }
+
+  to {
+      -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotation-endless {
+  from {
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-endless {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.rotation-endless {
+  -webkit-animation: rotation-endless 1s linear infinite;
+  -moz-animation: rotation-endless 1s linear infinite;
+  -o-animation: rotation-endless 1s linear infinite;
+  animation: rotation-endless 1s linear infinite;
+}
+
+
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}
 	25%, 75% {opacity: 0;}
@@ -43,6 +92,7 @@
 	-o-animation-name: flash;
 	animation-name: flash;
 }
+
 @-webkit-keyframes shake {
 	0%, 100% {-webkit-transform: translateX(0);}
 	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}

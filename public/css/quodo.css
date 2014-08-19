@@ -2015,6 +2015,44 @@ a.link-underlined.color-blue-light:hover:after {
   -o-animation-duration: 2000ms;
   animation-duration: 2000ms;
 }
+@-webkit-keyframes rotation-endless {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotation-endless {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotation-endless {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotation-endless {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotation-endless {
+  -webkit-animation: rotation-endless 1s linear infinite;
+  -moz-animation: rotation-endless 1s linear infinite;
+  -o-animation: rotation-endless 1s linear infinite;
+  animation: rotation-endless 1s linear infinite;
+}
 @-webkit-keyframes flash {
   0%,
   50%,
@@ -5468,18 +5506,21 @@ body {
   background-clip: padding-box;
 }
 .demo .icons-demo .icon-demo {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding: 1.4em 0 1.8em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 20%;
-  float: left;
-  text-align: center;
-  padding: 1.4em 0 1.8em;
 }
 .demo .icons-demo .icon-demo:hover {
+  background: #eee;
+}
+.demo .icons-demo .icon-demo:active {
   background: #eee;
 }
 .demo .icons-demo .icon-demo i {
@@ -5488,6 +5529,7 @@ body {
 .demo .icons-demo .icon-demo span {
   display: block;
   margin-top: 0.8em;
+  white-space: nowrap;
 }
 .demo .index-links {
   text-align: center;
@@ -5502,6 +5544,9 @@ body {
   .demo {
     margin-right: 0;
     height: auto;
+  }
+  .demo .icons-demo .icon-demo {
+    width: 50%;
   }
   .demo .viewport {
     margin-left: 0;
