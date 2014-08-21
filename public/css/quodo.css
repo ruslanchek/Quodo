@@ -1016,6 +1016,26 @@ a.link-underlined:active:after {
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
+  float: left;
+}
+.nav-hero nav {
+  float: right;
+}
+.nav-hero nav a {
+  color: #ffffff;
+}
+.nav-hero nav a:hover {
+  color: #d7d7d7;
+}
+.nav-hero:after:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav-hero:after:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .footer {
   margin-top: 40px;
