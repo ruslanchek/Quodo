@@ -2,7 +2,7 @@
 body,
 th,
 td {
-  font-family: 'Scada', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   color: #505961;
   line-height: 1.55em;
@@ -282,10 +282,76 @@ audio {
   margin-left: auto;
 }
 .wrapper-left {
+  margin-left: auto;
   margin-right: auto;
 }
 .wrapper-right {
+  margin-right: auto;
   margin-left: auto;
+}
+.wrapper-600 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+}
+.wrapper-700 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+}
+.wrapper-800 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+}
+.wrapper-900 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+}
+.wrapper-1000 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+}
+.wrapper-1100 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.wrapper-1200 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+.wrapper-1300 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1300px;
+}
+.wrapper-1400 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+}
+.wrapper-1500 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
+}
+.wrapper-1600 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+}
+.content-standard {
+  margin: 0 20px;
+  min-width: 900px;
+}
+@media only screen and (max-width: 320px) {
+  .content-standard {
+    min-width: 280px;
+  }
 }
 .grid-12 {
   margin-left: -3%;
@@ -625,11 +691,11 @@ a:hover {
 a:active {
   color: #f0644d;
 }
-a.link-dashed {
+.link-dashed {
   text-decoration: none;
   position: relative;
 }
-a.link-dashed:after {
+.link-dashed:after {
   border-bottom: 1px dashed #0ea2bb;
   content: '';
   display: block;
@@ -639,23 +705,23 @@ a.link-dashed:after {
   width: 100%;
   opacity: 0.55;
 }
-a.link-dashed:link:after {
+.link-dashed:link:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-dashed:visited:after {
+.link-dashed:visited:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-dashed:hover:after {
+.link-dashed:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-dashed:active:after {
+.link-dashed:active:after {
   border-bottom-color: #f0644d;
 }
-a.link-underlined {
+.link-underlined {
   text-decoration: none;
   position: relative;
 }
-a.link-underlined:after {
+.link-underlined:after {
   border-bottom: 1px solid #0ea2bb;
   content: '';
   display: block;
@@ -665,16 +731,16 @@ a.link-underlined:after {
   width: 100%;
   opacity: 0.4;
 }
-a.link-underlined:link:after {
+.link-underlined:link:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-underlined:visited:after {
+.link-underlined:visited:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-underlined:hover:after {
+.link-underlined:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-underlined:active:after {
+.link-underlined:active:after {
   border-bottom-color: #f0644d;
 }
 .white-links a {
@@ -950,6 +1016,23 @@ a.link-underlined:active:after {
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
+  float: left;
+}
+.nav-hero nav {
+  float: right;
+}
+.nav-hero nav a {
+  margin-left: 3ex;
+}
+.nav-hero:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav-hero:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .footer {
   margin-top: 40px;
@@ -971,7 +1054,7 @@ a.link-underlined:active:after {
 .button {
   display: inline-block;
   vertical-align: top;
-  font-family: 'Scada', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -1948,6 +2031,95 @@ a.link-underlined.color-blue-light:hover:after {
   -moz-animation-duration: 2000ms;
   -o-animation-duration: 2000ms;
   animation-duration: 2000ms;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.spin {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+@-webkit-keyframes pushing {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes pushing {
+  0% {
+    -moz-transform: scale(1);
+  }
+  25% {
+    -moz-transform: scale(0.95);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes pushing {
+  0% {
+    -o-transform: scale(1);
+  }
+  25% {
+    -o-transform: scale(0.95);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@keyframes pushing {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pushing {
+  -webkit-animation-name: pushing;
+  -moz-animation-name: pushing;
+  -o-animation-name: pushing;
+  animation-name: pushing;
 }
 @-webkit-keyframes flash {
   0%,
@@ -5376,18 +5548,6 @@ body {
     min-width: 280px;
   }
 }
-.wrapper {
-  max-width: 1100px;
-}
-.content {
-  margin: 0 20px;
-  min-width: 900px;
-}
-@media only screen and (max-width: 320px) {
-  .content {
-    min-width: 280px;
-  }
-}
 .demo {
   height: 100%;
 }
@@ -5413,27 +5573,29 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.demo .icons-demo .icon-demo {
+.demo .icons-demo .font-icon-demo {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding: 1.4em 0 1.8em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 20%;
-  float: left;
-  text-align: center;
-  padding: 1.4em 0 1.8em;
 }
-.demo .icons-demo .icon-demo:hover {
+.demo .icons-demo .font-icon-demo:hover {
   background: #eee;
 }
-.demo .icons-demo .icon-demo i {
+.demo .icons-demo .font-icon-demo i {
   font-size: 42px;
 }
-.demo .icons-demo .icon-demo span {
+.demo .icons-demo .font-icon-demo span {
   display: block;
   margin-top: 0.8em;
+  white-space: nowrap;
+  font-family: "PT Sans", sans-serif;
 }
 .demo .index-links {
   text-align: center;
@@ -5448,6 +5610,9 @@ body {
   .demo {
     margin-right: 0;
     height: auto;
+  }
+  .demo .icons-demo .font-font-icon-demo {
+    width: 50%;
   }
   .demo .viewport {
     margin-left: 0;
