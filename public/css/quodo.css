@@ -691,11 +691,11 @@ a:hover {
 a:active {
   color: #f0644d;
 }
-a.link-dashed {
+.link-dashed {
   text-decoration: none;
   position: relative;
 }
-a.link-dashed:after {
+.link-dashed:after {
   border-bottom: 1px dashed #0ea2bb;
   content: '';
   display: block;
@@ -705,23 +705,23 @@ a.link-dashed:after {
   width: 100%;
   opacity: 0.55;
 }
-a.link-dashed:link:after {
+.link-dashed:link:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-dashed:visited:after {
+.link-dashed:visited:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-dashed:hover:after {
+.link-dashed:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-dashed:active:after {
+.link-dashed:active:after {
   border-bottom-color: #f0644d;
 }
-a.link-underlined {
+.link-underlined {
   text-decoration: none;
   position: relative;
 }
-a.link-underlined:after {
+.link-underlined:after {
   border-bottom: 1px solid #0ea2bb;
   content: '';
   display: block;
@@ -731,16 +731,16 @@ a.link-underlined:after {
   width: 100%;
   opacity: 0.4;
 }
-a.link-underlined:link:after {
+.link-underlined:link:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-underlined:visited:after {
+.link-underlined:visited:after {
   border-bottom-color: #0ea2bb;
 }
-a.link-underlined:hover:after {
+.link-underlined:hover:after {
   border-bottom-color: #f0644d;
 }
-a.link-underlined:active:after {
+.link-underlined:active:after {
   border-bottom-color: #f0644d;
 }
 .white-links a {
@@ -1022,17 +1022,14 @@ a.link-underlined:active:after {
   float: right;
 }
 .nav-hero nav a {
-  color: #ffffff;
+  margin-left: 3ex;
 }
-.nav-hero nav a:hover {
-  color: #d7d7d7;
-}
-.nav-hero:after:after {
+.nav-hero:after {
   content: "";
   display: table;
   clear: both;
 }
-.nav-hero:after:after {
+.nav-hero:after {
   content: "";
   display: table;
   clear: both;
