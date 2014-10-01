@@ -1064,7 +1064,6 @@ a:active {
   margin: 0;
   border: 0;
   border-radius: 2px;
-  box-shadow: none;
   cursor: pointer;
   background: #dddfe0;
   padding: 0.8em 2.5ex;
@@ -1084,16 +1083,28 @@ a:active {
 .button:hover {
   background: #eceeef;
 }
+.button:hover:disabled {
+  background: #dddfe0;
+}
 .button:active {
   background: #ced0d1;
-  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+.button:active:disabled {
+  background: #dddfe0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .button.flat {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.button:disabled {
+  opacity: 0.5;
 }
 .button-fat {
   padding: 1.1em 2.5ex;
@@ -1212,6 +1223,40 @@ textarea:focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #7acfda;
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #7acfda;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #7acfda;
+}
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="url"]:disabled,
+input[type="phone"]:disabled,
+input[type="tel"]:disabled,
+input[type="number"]:disabled,
+input[type="datetime"]:disabled,
+input[type="date"]:disabled,
+input[type="search"]:disabled,
+input[type="range"]:disabled,
+input[type="file"]:disabled,
+input[type="datetime-local"]:disabled,
+textarea:disabled {
+  opacity: 0.5;
+}
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error,
+input[type="url"].error,
+input[type="phone"].error,
+input[type="tel"].error,
+input[type="number"].error,
+input[type="datetime"].error,
+input[type="date"].error,
+input[type="search"].error,
+input[type="range"].error,
+input[type="file"].error,
+input[type="datetime-local"].error,
+textarea.error {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #f8967a;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #f8967a;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125), inset 0 0 0 1px #f8967a;
 }
 select {
   display: block;
@@ -5553,6 +5598,11 @@ body {
 }
 .demo code {
   display: none;
+  max-width: 100%;
+}
+.demo code pre {
+  max-width: 100%;
+  overflow: auto;
 }
 .demo .code-show {
   margin-bottom: -2px;

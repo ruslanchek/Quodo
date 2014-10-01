@@ -17,7 +17,9 @@ var Demo = function(){
 
         $('.animation-test').on('dblclick touchend', function(e){
             e.preventDefault();
-            $(this).QAnimate($(this).data('animation'));
+            $(this).QAnimate($(this).data('animation'), {
+                duration: 5000
+            });
         });
     };
 
