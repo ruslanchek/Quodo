@@ -1250,6 +1250,37 @@ select {
 label {
   display: block;
   margin-bottom: 1.6em;
+  position: relative;
+}
+label span.error {
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+  min-width: 185px;
+  top: 0;
+  margin-left: 10px;
+  padding: 0.12em 1.5ex 0;
+  background: #f0644d;
+  color: #ffffff;
+  font-size: 0.9em;
+  opacity: 0.9;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+label span.error:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -5px;
+  top: 0.5em;
+  border-style: solid;
+  border-width: 6px 8px 6px 0;
+  border-color: transparent #f0644d transparent transparent;
 }
 .alert {
   background: #dddfe0;

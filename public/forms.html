@@ -55,24 +55,21 @@
 
 <!-- VIEWPORT -->
 <h2>Default form</h2>
-<div class="grid-10">
-    <div class="span-5">
-        <div class="topic topic-bordered">
-            <form method="post" action="" class="form">
-                <label>
-                    Email
-                    <input type="email" name="user-email" class="width-100" placeholder="Please, type your e-mail" />
-                </label>
 
-                <label>
-                    Password
-                    <input type="password" name="user-password" class="width-100" />
-                </label>
+<div class="topic topic-bordered">
+    <form method="post" action="" class="form width-50">
+        <label>
+            Email
+            <input type="email" name="user-email" class="width-100" placeholder="Please, type your e-mail" />
+        </label>
 
-                <button class="button button-go">Log in</button>
-            </form>
-        </div>
-    </div>
+        <label>
+            Password
+            <input type="password" name="user-password" class="width-100" />
+        </label>
+
+        <button class="button button-go">Log in</button>
+    </form>
 </div>
 
 <code><pre class="prettyprint">
@@ -94,41 +91,58 @@
 
 <br/><br/>
 
-<h2>Stretched form</h2>
-<div class="grid-10">
-    <div class="span-5">
-        <div class="topic topic-bordered">
-            <form method="post" action="" class="form">
-                <label>
-                    <input type="email" name="user-email" placeholder="Email" class="width-100 error" />
-                </label>
+<h2>Showing error, no labels</h2>
 
-                <label>
-                    <input type="password" name="user-password" placeholder="Password" class="width-100" />
-                </label>
+<div class="topic topic-bordered">
+    <form method="post" action="" class="form width-50">
+        <label>
+            <input type="email" name="user-email" placeholder="Email" class="width-100 error" />
+            <span class="error">E-mail field must be filled</span>
+        </label>
 
-                <button class="button button-go width-100">Log in</button>
-            </form>
-        </div>
-    </div>
+        <label>
+            <input type="password" name="user-password" placeholder="Password" class="width-100" />
+        </label>
+
+        <button class="button button-go">Log in</button>
+    </form>
 </div>
 
 <code><pre class="prettyprint">
-&lt;div class="topic topic-bordered width-50"&gt;
-    &lt;form method="post" action="" class="form"&gt;
+&lt;div class="topic topic-bordered"&gt;
+    &lt;form method="post" action="" class="form width-50"&gt;
         &lt;label&gt;
-            &lt;input type="email" name="user-email" placeholder="Email" class="width-100" /&gt;
+            &lt;input type="email" name="user-email" placeholder="Email" class="width-100 error" /&gt;
+            &lt;span class="error"&gt;E-mail field must be filled&lt;/span&gt;
         &lt;/label&gt;
 
         &lt;label&gt;
             &lt;input type="password" name="user-password" placeholder="Password" class="width-100" /&gt;
         &lt;/label&gt;
 
-        &lt;button class="button button-go width-100"&gt;Log in&lt;/button&gt;
+        &lt;button class="button button-go"&gt;Log in&lt;/button&gt;
     &lt;/form&gt;
 &lt;/div></pre></code>
-<!-- /VIEWPORT -->   
 
+
+<br/><br/>
+
+
+<h2>Complex inputs</h2>
+
+<div class="topic topic-bordered">
+    <form method="post" action="" class="form width-50">
+        <label>
+            Email
+            <input type="email" name="user-email" placeholder="Email" class="width-100" />
+        </label>
+
+        <button class="button button-go">Log in</button>
+    </form>
+</div>
+
+
+<!-- /VIEWPORT -->
                         </div>
                     </div>
                 </div>

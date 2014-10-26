@@ -55,4 +55,34 @@ select {
 label {
   display: block;
   margin-bottom: 1.6em;
+  position: relative;
+
+  span.error {
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    min-width: 185px;
+    top: 0;
+    margin-left: 10px;
+
+    padding: 0.12em 1.5ex 0;
+    background: @color-red;
+    color: @color-white;
+    font-size: 0.9em;
+    opacity: 0.9;
+
+    .border-radius();
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -5px;
+      top: 0.5em;
+      border-style: solid;
+      border-width: 6px 8px 6px 0;
+      border-color: transparent @color-red transparent transparent;
+    }
+  }
 }
