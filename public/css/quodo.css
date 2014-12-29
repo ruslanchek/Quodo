@@ -696,6 +696,7 @@ a:active {
   display: block;
   position: absolute;
   bottom: -0.075em;
+  left: 0;
   height: 0;
   width: 100%;
   opacity: 0.55;
@@ -722,6 +723,7 @@ a:active {
   display: block;
   position: absolute;
   bottom: -0.075em;
+  left: 0;
   height: 0;
   width: 100%;
   opacity: 0.4;
@@ -760,6 +762,9 @@ a:active {
 .table tfoot {
   background: #e5e7e8;
 }
+.table tfoot th {
+  border-bottom: none;
+}
 .table-bordered tbody td {
   border-bottom: 1px solid #dddfe0;
 }
@@ -773,7 +778,7 @@ a:active {
 }
 .table-bordered-vertical tfoot td,
 .table-bordered-vertical tfoot th {
-  border-left-color: #c4c6c7;
+  border-left-color: #d8dadb;
 }
 .table-boxed {
   border: 1px solid #dddfe0;
@@ -2033,7 +2038,7 @@ a.link-underlined.color-blue-light:hover:after {
   content: "\e129";
 }
 .topic {
-  padding: 1.5em 2.5ex;
+  padding: 0.95em 2.5ex;
   border: 1px solid transparent;
   margin-bottom: 3.5ex;
   -webkit-border-radius: 2px;
@@ -2058,6 +2063,9 @@ a.link-underlined.color-blue-light:hover:after {
 }
 .topic.topic-dark a:hover {
   color: #d7d7d7;
+}
+.topic section .section-body p:last-of-type {
+  margin-bottom: 0;
 }
 .section .section-thumb {
   float: left;

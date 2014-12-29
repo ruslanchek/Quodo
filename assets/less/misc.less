@@ -1,6 +1,6 @@
 // Topics
 .topic {
-  padding: 1.5em @base-side-padding;
+  padding: @base-padding @base-side-padding;
   border: 1px solid transparent;
   margin-bottom: 3.5ex;
   .border-radius(@base-border-radius);
@@ -18,6 +18,14 @@
     color: #fff;
 
     .white-links;
+  }
+
+  section {
+    .section-body {
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
